@@ -33,24 +33,26 @@ export default async function PostPage({ params }) {
       {/* <MarkdownContent content={content} /> */}
       {/* https://shiki.style/themes#themes */}
       <section className="max-w-sm sm:max-w-2xl prose prose-lg prose-pre:p-0 px-2 sm:px-0">
-        <MDXRemote
-          source={content}
-          components={postComponents}
-          options={{
-            mdxOptions: {
-              remarkPlugins: [remarkGfm],
-              rehypePlugins: [
-                [
-                  rehypePrettyCode as any,
-                  ,
-                  {
-                    theme: "github-light",
-                  },
+        {content && (
+          <MDXRemote
+            source={content}
+            components={postComponents}
+            options={{
+              mdxOptions: {
+                remarkPlugins: [remarkGfm],
+                rehypePlugins: [
+                  [
+                    rehypePrettyCode as any,
+                    ,
+                    {
+                      theme: "github-light",
+                    },
+                  ],
                 ],
-              ],
-            },
-          }}
-        />
+              },
+            }}
+          />
+        )}
       </section>
     </article>
   )
