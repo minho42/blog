@@ -41,7 +41,8 @@ export default async function PostPage({ params }) {
               remarkPlugins: [remarkGfm],
               rehypePlugins: [
                 [
-                  rehypePrettyCode,
+                  rehypePrettyCode as any,
+                  ,
                   {
                     theme: "github-light",
                   },
