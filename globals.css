@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+}
+
+.prose {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* remove weird tiny grays at each corner */
+.prose :where(pre):not(:where([class~="not-prose"] *)) {
+  background-color: transparent !important;
+}
+
+/* change single backtick i.e <code> from prose to github like */
+.prose :where(code):not(:where([class~="not-prose"] *)):before,
+:after {
+  content: "" !important;
+}
+
+/* change single backtick i.e <code> from prose to github like */
+.prose :not(pre *):where(code):not(:where([class~="not-prose"] *)) {
+  font-weight: 400 !important;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: #eff1f3;
+  border-radius: 6px;
+}
+
+.prose :where(ul > li):not(:where([class~="not-prose"] *))::marker {
+  color: #0f1419 !important;
+}
+
+.prose :where(a):not(:where([class~="not-prose"] *)) {
+  @apply text-blue-600 !important;
+}
+
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
+  content: none;
+}
+
+.prose :where(blockquote):not(:where([class~="not-prose"] *)) {
+  font-weight: 400;
+  font-style: normal;
+  color: #0f1419;
+  border-left-color: #d0d7de;
+  /* border-left-width: 0.25rem; */
+  /* border-left-color: var(--tw-prose-quote-borders); */
+  /* margin-top: 1.6em; */
+  /* margin-bottom: 1.6em; */
+  /* padding-left: 1em; */
+}
+
+/* from github */
+.prose :where(section):not(:where([class~="not-prose"] *)) {
+  background-color: #f6f8fa !important;
+  line-height: 1.5;
+}
+
+/* from github */
+.prose :where(.linenumber):not(:where([class~="not-prose"] *)) {
+  font-size: 12px;
+  color: #6e7781;
+  padding-right: 16px !important;
+}
+
+/* from github */
+pre > code {
+  background-color: #f6f8fa !important;
+  padding: 0.5em !important;
+}
