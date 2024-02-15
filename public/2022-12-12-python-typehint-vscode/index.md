@@ -12,13 +12,14 @@ This is an odd default setting as type hints are optional and those who choose t
 
 Let's turn it on.
 
-
 Before
+
 ```json
 "python.analysis.typeCheckingMode": "off",
 ```
 
 After
+
 ```json
 "python.analysis.typeCheckingMode": "basic",
 ```

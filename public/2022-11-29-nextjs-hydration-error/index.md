@@ -9,15 +9,15 @@ Just encountered `React Hydration Error` while using Next.js
 >
 > Error: Hydration failed because the initial UI does not match what was rendered on the server.
 
->Unhandled Runtime Error
+> Unhandled Runtime Error
 >
 > Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
 
 Above error messages are unintuitive and call stack traces don't give much clue where the source of error is.
 
-[#35773](https://github.com/vercel/next.js/discussions/35773) <- some fixes are shared in the github discussion
+[#35773](https://github.com/vercel/next.js/discussions/35773): some fixes are shared in the github discussion
 
-[React Hydration Error](https://nextjs.org/docs/messages/react-hydration-error) <- this link shows possible fix but still not very helpful 
+[React Hydration Error](https://nextjs.org/docs/messages/react-hydration-error): this link shows possible fix but still not very helpful
 
 In my case, the cause was from an invalid HTML: missing tr tag in table
 

@@ -6,6 +6,7 @@ date: "2022-12-31"
 Debugging with VS Code
 
 ## Problem
+
 VS Code debugger runs on the root directory of the file (default).
 
 This default behavior of the debugger may cause following errors if the file you want to debug is not on the root directory.
@@ -20,6 +21,7 @@ Exception has occurred: FileNotFoundError
 ```
 
 ## Solution
+
 Set `cwd` in the debugger settings, `.vscode/launch.json`
 
 > "cwd": Absolute path to the working directory of the program being debugged. Default is the root directory of the file.
@@ -27,32 +29,39 @@ Set `cwd` in the debugger settings, `.vscode/launch.json`
 ## Values of `cwd`
 
 - `${fileDirname}`
+
   - The current opened file's dirname
   - This will run the debugger on the currently opened file instead of the root directory opened in VS Code
 
 - `${workspaceFolder}`
   - Default value
   - Root directory
-  - You can specify relative path from the root directory like so: "${workspaceFolder}/2022"
-
+  - You can specify relative path from the root directory like so: `${workspaceFolder}/2022`
 
 Sample `.vscode/launch.json`
 
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {"name":"Python: Current File","type":"python","request":"launch","program":"${file}","console":"integratedTerminal","justMyCode":true},
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "cwd": "${fileDirname}"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "cwd": "${fileDirname}"
+    }
+  ]
 }
 ```
 

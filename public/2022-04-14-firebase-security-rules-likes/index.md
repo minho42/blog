@@ -41,9 +41,9 @@ It's duplicate from `users[].id`, frontend code is ensuring both are in sync in 
 
 Why `userIds` list?
 
-**Turns out it's impossible (?) to find if users list has id of 'user_1' or not with above data structure.** (<- let me know if it's not true)
+**Turns out it's impossible (?) to find if users list has id of 'user_1' or not with above data structure.** (let me know if it's not true)
 
-It's possible in JavaScript but Firebase Security Rules are built on top of JavaScript/JSON-looking language called [Common Expression Lanuage](https://firebase.google.com/docs/rules/rules-language) that is non-turing complete.
+It's possible in JavaScript but Firebase Security Rules are built on top of JavaScript/JSON-looking language called [Common Expression Language](https://firebase.google.com/docs/rules/rules-language) that is non-turing complete.
 
 ## Start applying Security Rules
 
@@ -54,7 +54,7 @@ Like button can:
 
 Unlike button can:
 
-- `delete` document if no one likes the post anymore.
+- `delete` document if no one likes the post any more.
 - `update` document by removing user but leaving other people as is
 
 ### read
@@ -104,7 +104,7 @@ Like (add user) and unlike (remove user) both are considered `update` operations
 
 Adding user to the liked user list is same as creating a new one: any authenticated user is allowed to do so.
 
-**But removing user from list (without deleting the document) must make sure user is only allowed to remove himself/herself from the liked uesrs list.**
+**But removing user from list (without deleting the document) must make sure user is only allowed to remove himself/herself from the liked users list.**
 
 How to make such a rule?
 

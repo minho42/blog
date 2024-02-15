@@ -23,11 +23,11 @@ It's like how [`closure`](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 In example code below,
 
-<ParentComponent> has access to it's own ref (parentInputRef).
+\<ParentComponent> has access to it's own ref (parentInputRef).
 
-<ParentComponent> also has access to <ChildComponentWithForwardRef> ref (childForwardRef).
+\<ParentComponent> also has access to \<ChildComponentWithForwardRef> ref (childForwardRef).
 
-<ParentComponent> doesn't has access to <ChildComponentWithoutForwardRef> ref (childWithoutForwardRef).
+\<ParentComponent> doesn't has access to \<ChildComponentWithoutForwardRef> ref (childWithoutForwardRef).
 
 > Uncaught TypeError: Cannot read properties of null (reading 'value')
 

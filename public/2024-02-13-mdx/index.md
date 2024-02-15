@@ -85,3 +85,27 @@ I don't need to use `.mdx` extension in order to use MDX.
 
 - Check out other parts of Dan's code
 - Check out how other people do what I already think I know
+
+## Errors
+
+1. [Async Server Component TypeScript Error](https://nextjs.org/docs/app/building-your-application/configuring/typescript#async-server-component-typescript-error)
+
+> 'Promise\<Element>' is not a valid JSX element
+
+### Fix: update `@types/react` and `typescript`
+
+```shell
+npm i -D @types/react/latest typescript/latest
+```
+
+2. Use of `<-`
+
+> Unexpected character `-` (U+002D) before name, expected a character that can start a name, such as a letter, `$`, or `_`
+
+Fix: I don't know. Just removed `<-`
+
+3. Not escaping characters
+
+- Escape brackets: `<A>` to `\<A>` if not React component
+- Escape curly braces: `text-{color}` to `text-\{color}`
+- `${var}` to `` `${var}` ``

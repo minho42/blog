@@ -2,7 +2,6 @@ import { readdir, readFile } from "fs/promises"
 import matter from "gray-matter"
 import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
-import remarkGfm from "remark-gfm"
 import rehypePrettyCode from "rehype-pretty-code"
 
 // Multiple versions of this page will be statically generated
@@ -30,7 +29,6 @@ export default async function PostPage({ params }) {
         <h1 className="text-3xl">{data.title}</h1>
       </section>
 
-      {/* <MarkdownContent content={content} /> */}
       {/* https://shiki.style/themes#themes */}
       <section className="max-w-sm sm:max-w-2xl prose prose-lg prose-pre:p-0 px-2 sm:px-0">
         {content && (
@@ -39,7 +37,6 @@ export default async function PostPage({ params }) {
             components={postComponents}
             options={{
               mdxOptions: {
-                remarkPlugins: [remarkGfm],
                 rehypePlugins: [
                   [
                     rehypePrettyCode as any,
