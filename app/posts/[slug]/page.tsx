@@ -3,6 +3,7 @@ import matter from "gray-matter"
 import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import rehypePrettyCode from "rehype-pretty-code"
+import remarkGfm from "remark-gfm"
 
 // Multiple versions of this page will be statically generated
 // using the `params` returned by `generateStaticParams`
@@ -37,6 +38,7 @@ export default async function PostPage({ params }) {
             components={postComponents}
             options={{
               mdxOptions: {
+                remarkPlugins: [remarkGfm],
                 rehypePlugins: [
                   [
                     rehypePrettyCode as any,
