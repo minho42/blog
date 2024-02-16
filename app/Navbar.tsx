@@ -25,7 +25,11 @@ export default function Navbar() {
       </Link>
       |
       <a href="https://github.com/minho42" rel="nofollow me" target="_blank">
-        <img className="w-8 h-8 rounded-full" src="https://github.com/minho42.png" alt="Min ho Kim" />
+        <img
+          className="w-8 h-8 rounded-full bg-neutral-200"
+          src="https://github.com/minho42.png"
+          alt="Min ho Kim"
+        />
       </a>
     </nav>
   )

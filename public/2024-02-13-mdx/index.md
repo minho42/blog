@@ -59,7 +59,7 @@ export default function Page() {
 ```
 
 I later found out that the Next.js MDX documentation
-also includes a [section](https://nextjs.org/docs/pages/building-your-application/configuring/mdx#remote-mdx) about `next-mdx-remote`.
+also includes a [section](https://nextjs.org/docs/pages/building-your-application/configuring/mdx#remote-mdx) about `next-mdx-remote` which is not up to date.
 
 He was using other packages I haven't heard of. Some I still haven't checked out. This is a good way to learn new stuff I guess. Much better than struggling with bad documentation.
 
@@ -84,6 +84,8 @@ I don't need to use `.mdx` extension in order to use MDX.
 
 - Check out other parts of Dan's code
 - Check out how other people do what I already think I know
+- Enable relative image imports from index.md
+- Embed tweets
 
 ## Errors
 
@@ -91,7 +93,7 @@ I don't need to use `.mdx` extension in order to use MDX.
 
 > 'Promise\<Element>' is not a valid JSX element
 
-### Fix: update `@types/react` and `typescript`
+Fix: update `@types/react` and `typescript`
 
 ```shell
 npm i -D @types/react/latest typescript/latest
@@ -105,6 +107,12 @@ Fix: I don't know. Just removed `<-`
 
 3. Not escaping characters
 
-- Escape brackets: `<A>` to `\<A>` if not React component
-- Escape curly braces: `text-{color}` to `text-\{color}`
+Fix: escape `<>`, `{}`, `${}`, etc.
+
+- brackets: `<A>` to `\<A>` if not React component
+- curly braces: `text-{color}` to `text-\{color}`
 - `${var}` to `` `${var}` ``
+
+## Etc
+
+- MDX feels a bit slower

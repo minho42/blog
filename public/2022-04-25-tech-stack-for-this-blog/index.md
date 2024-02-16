@@ -3,13 +3,24 @@ title: Tech stack for this blog
 date: "2022-04-25"
 ---
 
+[https://github.com/minho42/blog](https://github.com/minho42/blog)
+
 ### Frontend
 
 - Next.js
+
+  Initially started with:
+
   - Evolved from this tutorial [Static Blog With Next.js and Markdown](https://youtu.be/MrjeefD8sac) by [Brad Traversy](https://twitter.com/traversymedia)
   - gray-matter
   - react-markdown
   - react-syntax-highlighter
+
+  Changed:
+
+  - Added [MDX](/posts/2024-02-13-mdx) from Dan's blog [repo](https://github.com/gaearon/overreacted.io)
+  - next-mdx-remote
+  - rehype-pretty-code
 
 ### CSS
 
@@ -23,8 +34,9 @@ date: "2022-04-25"
 ### Etc
 
 - Domain: Cloudflare
-- [GitHub](https://github.com/minho42/blog)
+- GitHub
 - VS Code
+
   - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
     ```json
