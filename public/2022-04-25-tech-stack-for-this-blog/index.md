@@ -26,9 +26,9 @@ date: "2022-04-25"
 - [GitHub](https://github.com/minho42/blog)
 - VS Code
   - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
     ```json
     settings.json
-    
+
     "cSpell.language": "en-GB"
     ```
-

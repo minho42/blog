@@ -75,7 +75,6 @@ Previously using package [react-markdown](https://www.npmjs.com/package/react-ma
 
 - [next-mdx-remote](https://www.npmjs.com/package/next-mdx-remote)
 - [rehype-pretty-code](https://www.npmjs.com/package/rehype-pretty-code)
--
 
 ### TIL
 
