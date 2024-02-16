@@ -40,7 +40,6 @@ export default async function PostPage({ params }) {
                 rehypePlugins: [
                   [
                     rehypePrettyCode as any,
-                    ,
                     {
                       theme: "github-light",
                     },
