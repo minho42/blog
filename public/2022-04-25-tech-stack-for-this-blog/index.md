@@ -19,8 +19,11 @@ date: "2022-04-25"
   Changed:
 
   - Added [MDX](/posts/2024-02-13-mdx) from Dan's blog [repo](https://github.com/gaearon/overreacted.io)
+  - gray-matter
   - next-mdx-remote
   - rehype-pretty-code
+    - shiki
+  - remark-gfm
 
 ### CSS
 
