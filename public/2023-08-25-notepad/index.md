@@ -6,14 +6,7 @@ date: "2023-08-25"
 What's the implication of Microsoft's default text editor Nodepad to those who can't avoid.
 Pet peeve of having to use Windows Notepad on a public computer.
 
-[My tweet](https://x.com/minho42_/status/1686740368941805568?s=46)
-
-> What @Microsoft can do to the humanity right now:
->
-> 1. improve default Notepad app
-> 2. or change it to something else e.g. sublime, vscode, etc.
->
-> 12:06 AM · Aug 3, 2023
+<Tweet id="1686740368941805568" />
 
 Where I work, I share Windows computers with various healthcare professionals. Sharing computer is frustrating.
 

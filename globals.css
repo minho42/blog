@@ -42,7 +42,7 @@ body {
   color: #0f1419 !important;
 }
 
-.prose :where(a):not(:where([class~="not-prose"] *)) {
+.prose :where(a):not(:where([class~="not-prose"] *, .react-tweet-theme *)) {
   @apply text-blue-600 !important;
 }
 
