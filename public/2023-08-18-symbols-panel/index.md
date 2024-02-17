@@ -9,7 +9,7 @@ https://symbolspanel.vercel.app
 
 https://github.com/minho42/github-like-symbol-panel
 
-![Screenshot](./symbols-panel.png)
+![screenshot](/2023-08-18-symbols-panel/screenshot.png)
 
 ```shell
 ❯ npx create-next-app@latest github-like-symbol-panel

@@ -23,4 +23,4 @@ https://github.com/minho42/bloom-filter
 
 > Below screenshot shows "false positive"
 
-![Screenshot](./bloom-filter.png)
+![Screenshot](/2023-08-15-bloom-filter/screenshot.png)
