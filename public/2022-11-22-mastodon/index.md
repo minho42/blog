@@ -5,10 +5,10 @@ date: "2022-11-22"
 
 Following the most followed billionaire sinking in Twitter headquarter, bunch of high profile people in Python/Django community seemed to migrated to Mastodon.
 
-I hopped on the trend and created an account and gave it a try. 
+I hopped on the trend and created an account and gave it a try.
 Well not really because I don't have any followers and I didn't `toot`
 
-Totally unaware of this new universe, Fediverse. 
+Totally unaware of this new universe, Fediverse.
 What an odd name.
 I had to look up what it means several times.
 Looked up the word "federation" even more.
@@ -22,7 +22,8 @@ Of course, it's much more than that with different foundational concept: decentr
 Still as a user who's accustomed to Twitter, browsing experience is subpar.
 
 It's a `decentralized` social network.
->"If you are not paying you are the product"
+
+> "If you are not paying you are the product"
 
 As a user on the social media platform, I prefer it to be centralized than decentralized.
 Largely due to the lack of the experience in decentralized platform.
@@ -58,6 +59,7 @@ I can feel it every time I open it on the web.
 Lastly, decentralized servers.
 Servers are maintained and operated by multiple groups of people.
 This triggers various questions and renders me suspicious of the future of Mastodon most.
+
 - Could they afford the server hosting.
 - What are the incentives for the operators.
 - What happens if server is not maintained. Do I need to select another server to start over.
@@ -65,7 +67,7 @@ This triggers various questions and renders me suspicious of the future of Masto
 
 I'm positive there are answers to all of the above in technical terms though.
 
-Hey what do I know. 
+Hey what do I know.
 First time I used Twitter, I didn't get it either.
 Mostly for being so used to bulletin-board-type-of-platforms.
 Hadn't grasped the idea of retweet.
