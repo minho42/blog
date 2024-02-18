@@ -5,7 +5,7 @@ date: "2022-12-01"
 
 [Brace expansion on Wiki](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion>)
 
-[Tweet from Wes Bos](https://twitter.com/wesbos/status/1594713484129931264?s=46&t=xxR2npOul7j-26Fdq8qkJQ)
+<Tweet id="1594713484129931264" />
 
 Examples
 
