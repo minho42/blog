@@ -25,7 +25,7 @@ The package I used before, `react-markdown`, didn't support `js` as code block l
 
 `rehype-pretty-code` supports `js`.
 
-My repo where I used the package: [app/posts/[slug]/page.tsx](https://github.com/minho42/blog/blob/master/app/posts/%5Bslug%5D/page.tsx)
+My repo where I used the package: [app/[slug]/page.tsx](https://github.com/minho42/blog/blob/master/app/%5Bslug%5D/page.tsx)
 
 ### Packages used
 
@@ -42,7 +42,6 @@ My repo where I used the package: [app/posts/[slug]/page.tsx](https://github.com
 
 - Check out other parts of Dan's code
 - Check out how other people do what I already think I know
-- Enable relative image imports from index.md
 
 ## Errors encountered
 
