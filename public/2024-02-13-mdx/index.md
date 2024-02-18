@@ -38,11 +38,6 @@ My repo where I used the package: [app/[slug]/page.tsx](https://github.com/minho
 
 - I don't need to use `.mdx` extension in order to use MDX.
 
-### Todo
-
-- Check out other parts of Dan's code
-- Check out how other people do what I already think I know
-
 ## Errors encountered
 
 1. [Async Server Component TypeScript Error](https://nextjs.org/docs/app/building-your-application/configuring/typescript#async-server-component-typescript-error)
@@ -72,7 +67,3 @@ Fix: escape `<>`, `{}`, `${}`, etc.
 - brackets: `<A>` to `\<A>` if not React component
 - curly braces: `text-{color}` to `text-\{color}`
 - `${var}` to `` `${var}` ``
-
-## Etc
-
-- MDX feels a bit slower
