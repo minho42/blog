@@ -30,9 +30,9 @@ export default async function PostPage({ params }) {
         <h1 className="text-3xl">{data.title}</h1>
       </section>
 
-      {/* https://shiki.style/themes#themes */}
       <section className="max-w-sm sm:max-w-2xl prose prose-lg prose-pre:p-0 px-2 sm:px-0">
         {content && (
+          // https://github.com/hashicorp/next-mdx-remote
           <MDXRemote
             source={content}
             components={postComponents}
@@ -42,8 +42,10 @@ export default async function PostPage({ params }) {
                 remarkPlugins: [remarkGfm],
                 rehypePlugins: [
                   [
+                    // https://rehype-pretty-code.netlify.app/#options
                     rehypePrettyCode as any,
                     {
+                      // https://shiki.style/themes#themes
                       theme: "github-light",
                     },
                   ],
