@@ -3,7 +3,7 @@ title: Windows Notepad
 date: "2023-08-25"
 ---
 
-What's the implication of Microsoft's default text editor Nodepad to those who can't avoid.
+What's the implication of Microsoft's default text editor Notepad to those who can't avoid.
 Pet peeve of having to use Windows Notepad on a public computer.
 
 <Tweet id="1686740368941805568" />

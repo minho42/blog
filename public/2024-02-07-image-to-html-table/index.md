@@ -13,7 +13,7 @@ Convert image to HTML table
 
 ### Input
 
-![tango](/2024-02-07-image-to-html-table/tango.png)
+![tango](./tango.png)
 
 ### Output
 

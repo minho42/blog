@@ -13,7 +13,7 @@ export default async function PostPage({ params }) {
   const { data, content } = matter(file)
   let postComponents = {}
   try {
-    postComponents = await import("../../../public/" + params.slug + "/components")
+    postComponents = await import("../../public/" + params.slug + "/components")
   } catch (e) {
     if (e.code !== "MODULE_NOT_FOUND") {
       throw e
@@ -66,7 +66,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   return {
     alternates: {
-      canonical: `https://minho42.com/posts/${params.slug}`,
+      canonical: `https://minho42.com/${params.slug}/`,
     },
   }
 }

@@ -11,9 +11,7 @@ https://audio-visualization-tailwind.vercel.app
 
 [repo](https://github.com/minho42/audio-visualization)
 
-<div className="flex items-center justify-center max-w-sm bg-blue-200 px-4 rounded-2xl">
-    <img src="/2024-01-25-web-audio-api/screen.png"/>
-</div>
+![screenshot](./screenshot.png)
 
 ```js
 // app/page.js

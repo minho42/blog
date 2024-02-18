@@ -27,7 +27,7 @@ function Post({ post }: { post: Post }) {
   return (
     <section className="px-4 py-2">
       <h1 className="font-medium">
-        <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+        <Link href={`/${post.slug}`}>{post.title}</Link>
       </h1>
       <div className="text-sm text-neutral-500">{post.date}</div>
     </section>

@@ -80,3 +80,7 @@ pre > code {
   background-color: #f6f8fa !important;
   padding: 0.5em !important;
 }
+
+img {
+  max-width: 24rem;
+}
