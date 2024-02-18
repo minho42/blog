@@ -9,20 +9,22 @@ Feeling it's always late for the next day, and trying not to use mobile phone at
 Then she doesn't ask as much during the day.
 
 Tonight at bedtime, I told my daughter:
+
 ```text
 Me: "When I was growing up, I didn't have a computer or the Internet. You're so lucky you can just look up anything on the Internet."
 
 Daughter: "Then how did you find anything back then?"
-``````
+```
 
-I told my daughter that I would: 
+I told my daughter that I would:
+
 1. Ask people around me.
 2. Search from books.
 3. **Just leave it unanswered.**
 
 She just laughed.
 
-Now that I look back and think about this, 
+Now that I look back and think about this,
 I don't think I have really tried to satisfy my curiosity growing up. This means I rarely did options 1 and 2 above, and stuck with option 3 most of the time.
 I think I became used to the fact that it's hard to find what I wanted to find out.
 I vaguely remember the frustration I felt for the lack of ways to get some information.
@@ -36,4 +38,4 @@ Yet, AI-powered Internet, namely ChatGPT, has just lowered the wall to the extre
 I remember thinking how awesome it is to share and access limitless information in the cyberspace back in like 20+ years ago.
 **ChatGPT has brought back that excitement of unlimited possibility.**
 
-I guess my daughter will take this technology for granted. 
+I guess my daughter will take this technology for granted.

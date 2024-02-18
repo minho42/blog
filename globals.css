@@ -90,3 +90,7 @@ pre > code {
 img {
   max-width: 24rem;
 }
+
+code {
+  text-wrap: wrap;
+}
