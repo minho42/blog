@@ -81,16 +81,13 @@ body {
   padding-right: 16px !important;
 }
 
-/* from github */
 pre > code {
+  /* from github */
   background-color: #f6f8fa !important;
   padding: 0.5em !important;
+  text-wrap: wrap;
 }
 
 img {
   max-width: 24rem;
-}
-
-code {
-  text-wrap: wrap;
 }
