@@ -38,6 +38,7 @@ export default async function PostPage({ params }) {
             components={postComponents}
             options={{
               mdxOptions: {
+                useDynamicImport: true,
                 remarkPlugins: [remarkGfm],
                 rehypePlugins: [
                   [
