@@ -11,9 +11,7 @@ export default function Navbar() {
       <Link
         href="/"
         className={` ${
-          !pathname.includes("/books") && (pathname === "/" || pathname.includes("/"))
-            ? "text-black font-semibold underline"
-            : ""
+          pathname === "/" || pathname.includes("/posts") ? "text-black font-semibold underline" : ""
         }`}
       >
         Posts

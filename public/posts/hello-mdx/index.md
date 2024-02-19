@@ -1,5 +1,5 @@
 ---
-title: MDX
+title: Hello MDX
 date: "2024-02-13"
 ---
 
