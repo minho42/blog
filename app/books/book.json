@@ -637,7 +637,7 @@
     "title": "The Psychology of Money: Timeless lessons on wealth, greed, and happiness",
     "author": "Morgan Housel",
     "liked": false,
-    "url": "/2023-08-26-the-psychology-of-money"
+    "url": "/posts/the-psychology-of-money"
   },
   {
     "start": "2022",
@@ -661,7 +661,7 @@
     "title": "Project Hail Mary",
     "author": "Andy Weir",
     "liked": true,
-    "url": "/2022-10-17-project-hail-mary-review"
+    "url": "/posts/project-hail-mary-review"
   },
   {
     "start": "2022-08-11",
@@ -669,7 +669,7 @@
     "title": "Amazon Unbound: Jeff Bezos and the Invention of a Global Empire",
     "author": "Brad Stone",
     "liked": false,
-    "url": "/2023-01-08-amazon-unbound"
+    "url": "/posts/amazon-unbound"
   },
   {
     "start": "2023-01-08",
@@ -677,7 +677,7 @@
     "title": "The Martian: Stranded on Mars, one astronaut fights to survive",
     "author": "Andy Weir",
     "liked": true,
-    "url": "/2023-06-03-the-martian"
+    "url": "/posts/the-martian"
   },
   {
     "start": "2023-06-01",
@@ -685,7 +685,7 @@
     "title": "The Minimalist Entrepreneur: How Great Founders Do More with Less",
     "author": "Sahil Lavingia ",
     "liked": false,
-    "url": "/2023-06-11-the-minimalist-entrepreneur"
+    "url": "/posts/the-minimalist-entrepreneur"
   },
   {
     "start": "2023-06-11",
@@ -693,7 +693,7 @@
     "title": "Ready Player One",
     "author": "Ernest Cline",
     "liked": true,
-    "url": "/2023-06-25-ready-player-one"
+    "url": "/posts/ready-player-one"
   },
   {
     "start": "2023-06-25",
@@ -701,7 +701,7 @@
     "title": "Ready Player Two",
     "author": "Ernest Cline",
     "liked": false,
-    "url": "/2023-08-09-ready-player-two"
+    "url": "/posts/ready-player-two"
   },
   {
     "start": "2023-08-09",
@@ -709,7 +709,7 @@
     "title": "No Filter: The Inside Story of Instagram",
     "author": "Sarah Frier",
     "liked": false,
-    "url": "/2023-09-11-no-filter"
+    "url": "/posts/no-filter"
   },
   {
     "start": "2023-09-12",
@@ -717,7 +717,7 @@
     "title": "Dark Matter",
     "author": "Blake Crouch",
     "liked": true,
-    "url": "/2023-11-01-dark-matter"
+    "url": "/posts/dark-matter"
   },
   {
     "start": "2023-09-19",
@@ -725,7 +725,7 @@
     "title": "The Housemaid",
     "author": "Freida McFadden",
     "liked": false,
-    "url": "/2023-10-04-the-housemaid"
+    "url": "/posts/the-housemaid"
   },
   {
     "start": "2023-09-27",
@@ -733,7 +733,7 @@
     "title": "Recursion",
     "author": "Blake Crouch",
     "liked": true,
-    "url": "/2023-11-01-recursion"
+    "url": "/posts/recursion"
   },
   {
     "start": "2023-10-19",
@@ -741,7 +741,7 @@
     "title": "American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road",
     "author": "Nick Bilton",
     "liked": true,
-    "url": "/2023-11-01-american-kingpin"
+    "url": "/posts/american-kingpin"
   },
   {
     "start": "2023-11-03",
@@ -749,7 +749,7 @@
     "title": "Upgrade",
     "author": "Blake Crouch",
     "liked": false,
-    "url": "/2023-12-03-upgrade"
+    "url": "/posts/upgrade"
   },
   {
     "start": "2023-12-03",
