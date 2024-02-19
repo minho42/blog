@@ -24,10 +24,10 @@ function DrugList({ drugs, title, source }: { drugs: S4[] | S8[]; title: string;
           const typedDrug = drug as S4 | S8
           return (
             <div key={typedDrug.name}>
-              <span className="text-base">{typedDrug.name}</span>
+              <span>{typedDrug.name}</span>
 
               {"brandNames" in typedDrug && typedDrug.brandNames.length > 0 && (
-                <span className="ml-1.5 text-sm text-neutral-500">
+                <span className="ml-1.5 text-base text-neutral-500">
                   (
                   {typedDrug.brandNames.map((brandName, index) => (
                     <span key={brandName}>{(index ? ", " : "") + brandName}</span>
