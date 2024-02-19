@@ -12,8 +12,7 @@ It turns out build script on Cloudflare was set to "Framework preset: Next.js (S
 "build": "next build && next export",
 ```
 
-
-Okay. 
+Okay.
 "Settings/Builds & deployments/Build configuration" has been changed and deployed.
 
 ```json
@@ -21,19 +20,18 @@ Okay.
 "build": "next build && next-sitemap && next export",
 ```
 
-> Checkout how I did it with [next-sitemap](/posts/2022-10-22-nextjs-sitemap)
-
+> Checkout how I did it with [next-sitemap](/posts/nextjs-sitemap)
 
 Deployment failed with following error messages.
 
 ```shell
 ...
-10:13:14.807	
+10:13:14.807
 10:13:14.981	(node:1446) ExperimentalWarning: The ESM module loader is experimental.
 10:13:14.993	file:///opt/buildhome/repo/node_modules/next-sitemap/dist/esm/cli.js:31
 10:13:14.993	        if (config?.generateRobotsTxt) {
 10:13:14.993	                   ^
-10:13:14.993	
+10:13:14.993
 10:13:14.993	SyntaxError: Unexpected token '.'
 10:13:14.994	    at Loader.moduleStrategy (internal/modules/esm/translators.js:81:18)
 10:13:14.999	Failed: build command exited with code: 1

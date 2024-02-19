@@ -6,15 +6,16 @@ date: "2022-11-24"
 🦠 Tested positive to COVID-19 (wife looked after 2 kids herself > 1 week)
 
 📚 Read more books than previous year (1 -> 5)
+
 - Choose FI
 - The Psychology of Money
 - The Rosie Result
 - Shoe Dog
-- [Project Hail Mary](/posts/2022-10-17-project-hail-mary-review) 👍
+- [Project Hail Mary](/posts/project-hail-mary-review) 👍
 
-📺 Ever so long alone time  (7 weeks, ended up in [tutorial hell](/posts/2022-12-17-tutorial-hell) without building much)
+📺 Ever so long alone time (7 weeks, ended up in [tutorial hell](/posts/tutorial-hell) without building much)
 
-✍️ [Started blogging](/posts/2022-04-27-started-blogging)
+✍️ [Started blogging](/posts/started-blogging)
 
 🇰🇷 Visited Korea (6 week holiday)
 

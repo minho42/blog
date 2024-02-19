@@ -3,7 +3,7 @@ title: The Martian by Andy Weir
 date: "2023-06-03"
 ---
 
-This is my second Andy Weir book after [*Project Hail Mary*](/posts/2022-10-17-project-hail-mary-review).
+This is my second Andy Weir book after [_Project Hail Mary_](/posts/project-hail-mary-review).
 
 I have seen the movie many years ago.
 Turns out I only remember glimpse of the scenes, ie. farming-in-the-mars, and forgot a lot about the movie.

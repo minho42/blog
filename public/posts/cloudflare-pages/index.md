@@ -18,7 +18,7 @@ Custom domain name settings are the easiest I've tried so far.
 Just add `minho42.com` and `www.minho42.com`. Done.
 
 Redirecting www url to non-www isn't obvious without looking up though.
-See [how to...](/posts/2022-11-30-cloudflare-redirect-with-page-rules)
+See [how to...](/posts/cloudflare-redirect-with-page-rules)
 It was easier with Netlify by setting the primary domain.
 
 Web Analytics is provided for free.

@@ -3,9 +3,9 @@ title: Ready Player Two by Ernest Cline
 date: "2023-08-09"
 ---
 
-As soon as I finished [*Ready Player One*](/posts/2023-06-25-ready-player-one),
-reading the sequel, *Ready Player Two*, has begun immediately.
-I was so intrigued to see what the author could come up with in the world where *Parzival* and friends already won the contest and can live happily ever after.
+As soon as I finished [_Ready Player One_](/posts/ready-player-one),
+reading the sequel, _Ready Player Two_, has begun immediately.
+I was so intrigued to see what the author could come up with in the world where _Parzival_ and friends already won the contest and can live happily ever after.
 
 Although I had been reading this 2020-follow-up novel quite consistently, it took more than a month to finish.
 Not unusual. But considering the first one took about 2 weeks, it tells something.
@@ -18,4 +18,4 @@ Which somewhat lost my immersion into the new challenges in the OASIS.
 Also many references weren't particularly of my interests in this book e.g. J. R. R. Tolkien, etc.
 
 Even though I didn't enjoy the sequel as much as the original, the series has plenty of creative ideas planted throughout.
-I'm looking forward to the film sequel that is reportedly in the works. 
+I'm looking forward to the film sequel that is reportedly in the works.

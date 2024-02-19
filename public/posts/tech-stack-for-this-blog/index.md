@@ -18,7 +18,7 @@ date: "2022-04-25"
 
   Changed:
 
-  - Added [MDX](/posts/2024-02-13-mdx) from Dan's blog [repo](https://github.com/gaearon/overreacted.io)
+  - Added [MDX](/posts/mdx) from Dan's blog [repo](https://github.com/gaearon/overreacted.io)
   - gray-matter
   - next-mdx-remote
   - rehype-pretty-code
@@ -28,11 +28,11 @@ date: "2022-04-25"
 ### CSS
 
 - Tailwind CSS
-  - @tailwindcss/typography ([post](/posts/2022-04-26-why-react-with-tailwind-didn't-render-markdown))
+  - @tailwindcss/typography ([post](/posts/why-react-with-tailwind-didn't-render-markdown))
 
 ### Deployment
 
-- ~~Netlify~~ -> Cloudflare Pages ([post](/posts/2022-11-30-cloudflare-pages))
+- ~~Netlify~~ -> Cloudflare Pages ([post](/posts/cloudflare-pages))
 
 ### Etc
 

@@ -13,26 +13,26 @@ date: "2023-12-31"
 
 🏫 Aaron (3yo) started childcare (3 days/week)
 
-🏖️ 3 day family trip to [Jervis Bay](/posts/2023-07-11-jervis-bay)
+🏖️ 3 day family trip to [Jervis Bay](/posts/jervis-bay)
 
 💪 Exercised [🏃‍♂️, 🏊‍♂️] few days in December
 
 🛒 Bought
 
 - ☕ Nespresso VertuoPlus Deluxe
-- 🧹 [Dyson vacuum cleaner](/posts/2023-07-19-dyson)
+- 🧹 [Dyson vacuum cleaner](/posts/dyson)
 - 📱 Switched from iPhone 7 to iPhone 14 Pro Max
 
 📚 Books read: 11
 
-1. [Amazon Unbound](/posts/2023-01-08-amazon-unbound)
-2. [The Martian](/posts/2023-06-03-the-martian) 👍
-3. [The Minimalist Entrepreneur](/posts/2023-06-11-the-minimalist-entrepreneur)
-4. [Ready Player One](/posts/2023-06-25-ready-player-one) 👍
-5. [Ready Player Two](/posts/2023-08-09-ready-player-two)
-6. [No Filter](/posts/2023-09-11-no-filter)
-7. [Dark Matter](/posts/2023-11-01-dark-matter) "👍"
-8. [The Housemaid](/posts/2023-10-04-the-housemaid)
-9. [Recursion](/posts/2023-11-01-recursion) 👍
-10. [American Kingpin](/posts/2023-11-01-american-kingpin) 👍
-11. [Upgrade](/posts/2023-12-03-upgrade)
+1. [Amazon Unbound](/posts/amazon-unbound)
+2. [The Martian](/posts/the-martian) 👍
+3. [The Minimalist Entrepreneur](/posts/the-minimalist-entrepreneur)
+4. [Ready Player One](/posts/ready-player-one) 👍
+5. [Ready Player Two](/posts/ready-player-two)
+6. [No Filter](/posts/no-filter)
+7. [Dark Matter](/posts/dark-matter) "👍"
+8. [The Housemaid](/posts/the-housemaid)
+9. [Recursion](/posts/recursion) 👍
+10. [American Kingpin](/posts/american-kingpin) 👍
+11. [Upgrade](/posts/upgrade)

@@ -110,4 +110,4 @@ await deleteDoc(docRef)
 
 ### Related
 
-[Firebase snippets for CRUD and Auth (version 9)](/posts/2022-04-08-firebase-v9-crud)
+[Firebase snippets for CRUD and Auth (version 9)](/posts/firebase-v9-crud)

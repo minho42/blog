@@ -7,21 +7,20 @@ date: "2023-07-31"
 
 2. Snippets can have [Dynamic Placeholder](https://manual.raycast.com/dynamic-placeholders) that can be used e.g. current date & time, etc.
 
-
 #### Create Snippet:
+
 Raycast -> Create Snippet:
+
 ```text
 	Name: today
 	Snippet: {date "yyyy-MM-dd"}
 	Keyword: !today
 ```
 
-
 Handy
 
-
 > Edit: 2023-08-15
-> Snippet doesn't work reliably sometimes. 
+> Snippet doesn't work reliably sometimes.
 
 Related:
-[Raycast](/posts/2022-12-17-raycast)
+[Raycast](/posts/raycast)

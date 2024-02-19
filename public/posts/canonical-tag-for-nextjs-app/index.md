@@ -45,10 +45,10 @@ Above code will insert following link tag inside head tag for this post
 
 ```html
 <head>
-  <link rel="canonical" href="https://minho42.com/posts/2023-12-22-canonical-tag-for-nextjs-app" />
+  <link rel="canonical" href="https://minho42.com/posts/canonical-tag-for-nextjs-app" />
 </head>
 ```
 
 #### Related
 
-[Canonical tag for Next.js (Pages Router)](/posts/2022-06-16-canonical-tag-for-nextjs)
+[Canonical tag for Next.js (Pages Router)](/posts/canonical-tag-for-nextjs)

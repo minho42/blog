@@ -47,4 +47,4 @@ export default function PostPage() {
 
 #### Related
 
-[Canonical tag for Next.js (App Router)](/posts/2023-12-22-canonical-tag-for-nextjs-app)
+[Canonical tag for Next.js (App Router)](/posts/canonical-tag-for-nextjs-app)

@@ -35,4 +35,4 @@ fs.writeFileSync("schools.csv", data2)
 
 ### Related
 
-[convert csv to json](/posts/2024-02-04-convert-csv-to-json)
+[convert csv to json](/posts/convert-csv-to-json)

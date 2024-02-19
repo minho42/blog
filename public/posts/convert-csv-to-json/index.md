@@ -32,4 +32,4 @@ node index.js
 
 ### Related
 
-[convert xlsx to csv](/posts/2023-04-12-node-convert-xlsx-to-csv)
+[convert xlsx to csv](/posts/node-convert-xlsx-to-csv)
