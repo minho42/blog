@@ -15,7 +15,11 @@ function DrugList({ drugs, title, source }: { drugs: S4[] | S8[]; title: string;
       <h2 className="text-center space-x-1 py-3 text-2xl border-b border-dashed border-neutral-400">
         <span className="font-semibold">{title}</span>
         <span>
-          (<a href={source}>source</a>)
+          (
+          <a href={source} target="_blank">
+            source
+          </a>
+          )
         </span>
       </h2>
 
