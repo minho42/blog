@@ -9,9 +9,11 @@ export type Post = {
 }
 
 async function getPosts(): Promise<Post[]> {
-  const entries = await readdir("./public/", { withFileTypes: true })
+  const entries = await readdir("./public/posts/", { withFileTypes: true })
   const dirs = entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name)
-  const fileContents = await Promise.all(dirs.map((dir) => readFile("./public/" + dir + "/index.md", "utf8")))
+  const fileContents = await Promise.all(
+    dirs.map((dir) => readFile("./public/posts/" + dir + "/index.md", "utf8"))
+  )
   const posts: Post[] = dirs.map((slug, i) => {
     const fileContent = fileContents[i]
     const { data } = matter(fileContent)
@@ -27,7 +29,7 @@ function Post({ post }: { post: Post }) {
   return (
     <section className="px-4 py-2">
       <h1 className="font-medium">
-        <Link href={`/${post.slug}`}>{post.title}</Link>
+        <Link href={`/posts/${post.slug}`}>{post.title}</Link>
       </h1>
       <div className="text-sm text-neutral-500">{post.date}</div>
     </section>

@@ -8,12 +8,12 @@ import remarkGfm from "remark-gfm"
 // Multiple versions of this page will be statically generated
 // using the `params` returned by `generateStaticParams`
 export default async function PostPage({ params }) {
-  const filename = "./public/" + params.slug + "/index.md"
+  const filename = "./public/posts/" + params.slug + "/index.md"
   const file = await readFile(filename, "utf8")
   const { data, content } = matter(file)
   let postComponents = {}
   try {
-    postComponents = await import("../../public/" + params.slug + "/components")
+    postComponents = await import("../../../public/posts/" + params.slug + "/components")
   } catch (e) {
     if (e.code !== "MODULE_NOT_FOUND") {
       throw e
@@ -61,7 +61,7 @@ export default async function PostPage({ params }) {
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
-  const entries = await readdir("./public/", { withFileTypes: true })
+  const entries = await readdir("./public/posts/", { withFileTypes: true })
   const dirs = entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name)
   return dirs.map((dir) => ({ slug: dir }))
 }
