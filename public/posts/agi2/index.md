@@ -1,5 +1,5 @@
 ---
-title: AGI2
+title: AGI 2
 date: "2024-02-19"
 ---
 
