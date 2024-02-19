@@ -19,5 +19,5 @@ I've always believed something like AGI or singularity wouldn't be achieved in m
 
 However, so many smart people think AGI is definitely going to arrive. This makes me wonder if it's really just a matter of time.
 
-What ChatGPTs and Stable Diffusion are capable of is wondrous magic. Unfathomable became reality.
+What ChatGPT and Stable Diffusion are capable of is wondrous magic. Unfathomable became reality.
 But like I mentioned in the above tweet, current technologies of AI is nowhere near what I think AGI is.
