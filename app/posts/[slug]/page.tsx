@@ -69,7 +69,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   return {
     alternates: {
-      canonical: `https://minho42.com/${params.slug}/`,
+      canonical: `https://minho42.com/posts/${params.slug}/`,
     },
   }
 }
