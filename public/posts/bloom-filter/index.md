@@ -3,6 +3,10 @@ title: Bloom filter
 date: "2023-08-16"
 ---
 
+<BloomFilter />
+
+---
+
 https://en.wikipedia.org/wiki/Bloom_filter
 
 > A Bloom filter is a space-efficient probabilistic data structure that is used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not – in other words, a query returns either "possibly in set" or "definitely not in set".
@@ -16,11 +20,3 @@ Then comes lots of searching and encountering errors just to realise React is no
 If I was given a job of implementing this simple program in an interview, I would've definitely bombed.
 
 Lesson: code more and frequently
-
-https://bloom-filter.vercel.app
-
-https://github.com/minho42/bloom-filter
-
-> Below screenshot shows "false positive"
-
-![screenshot](./screenshot.png)
