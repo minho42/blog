@@ -146,12 +146,6 @@ export function BloomFilter() {
     <div className="flex flex-col w-full space-y-3">
       <div className="flex items-center gap-3">
         <div className="text-3xl font-semibold">Bloom filter visualized</div>
-
-        <a className="" href="https://twitter.com/minho42_" target="_blank" rel="nofollow me">
-          <div className="fixed right-0 bottom-0 bg-black text-white no-underline text-sm px-3 py-1 rounded-tl-xl">
-            @minho42_
-          </div>
-        </a>
       </div>
 
       <div>
