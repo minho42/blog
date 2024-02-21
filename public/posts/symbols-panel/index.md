@@ -1,5 +1,5 @@
 ---
-title: Symbols panel
+title: GitHub-like symbols panel
 date: "2023-08-18"
 ---
 
