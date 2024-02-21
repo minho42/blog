@@ -85,9 +85,9 @@ export function BloomFilter() {
   const totalAlgorithms = ["md5", "sha1", "sha224", "sha256", "sha384", "sha512", "ripemd160"]
   const [selectedAlgorithms, setSelectedAlgorithms] = useState(["md5", "sha256"])
   const [addedTexts, setAddedTexts] = useState([])
-  const inputInsertRef = useRef()
-  const inputSearchRef = useRef()
-  const inputSizeRef = useRef()
+  const inputInsertRef = useRef<HTMLInputElement | null>(null)
+  const inputSearchRef = useRef<HTMLInputElement | null>(null)
+  const inputSizeRef = useRef<HTMLInputElement | null>(null)
 
   const addToTotal = (num) => {
     if (!totalBitsArray.includes(num) && typeof num === "number" && !Number.isNaN(num)) {
@@ -97,7 +97,7 @@ export function BloomFilter() {
 
   const handleInsert = (e) => {
     e.preventDefault()
-    if (inputInsertRef.current.value.trim() && !addedTexts.includes(inputInsertRef.current.value.trim())) {
+    if (inputInsertRef.current.value?.trim() && !addedTexts.includes(inputInsertRef.current.value?.trim())) {
       setAddedTexts([...addedTexts, inputInsertRef.current.value.trim()])
     }
     inputInsertRef.current.value = ""
@@ -134,7 +134,7 @@ export function BloomFilter() {
   }
 
   useEffect(() => {
-    inputSizeRef.current.value = bitSize
+    inputSizeRef.current.value = String(bitSize)
   }, [])
 
   useEffect(() => {
