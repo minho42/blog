@@ -75,11 +75,11 @@ export function SymbolPanel({ sourceCode }) {
     <div className="flex flex-col w-full rounded-md border border-neutral-300 text-sm ">
       <div className="px-2 py-1">
         <div className="flex w-full items-center justify-between">
-          <div className="font-bold py-1 h-8">Symbols</div>
+          <div className="flex grow font-bold py-1 h-8">Symbols</div>
           {selectedNode ? (
             <XMarkIcon
               onClick={() => setSelectedNode(null)}
-              className=" h-8 w-8 text-neutral-500 rounded-md p-2 hover:bg-neutral-100  cursor-pointer "
+              className=" h-10 w-10 text-neutral-500 rounded-md p-2 hover:bg-neutral-100  cursor-pointer "
             />
           ) : (
             ""
@@ -100,7 +100,7 @@ export function SymbolPanel({ sourceCode }) {
             >
               <div
                 className="flex items-center justify-center 
-              bg-blue-100 text-blue-600 font-bold text-xs
+              bg-blue-100 text-blue-600 font-bold text-sm
               rounded-md px-1 py-0"
               >
                 func
@@ -116,7 +116,7 @@ export function SymbolPanel({ sourceCode }) {
             <div className="font-semibold py-1">Definition</div>
           </div>
           <div className="px-2 py-1">
-            <div className="flex items-center gap-2 px-2 py-1 font-mono text-xs">
+            <div className="flex items-center gap-2 px-2 py-1 font-mono text-sm">
               <div className="text-neutral-500">{selectedNode?.loc.start.line}</div>
               {selectedDefinition}
             </div>
@@ -124,7 +124,7 @@ export function SymbolPanel({ sourceCode }) {
           <div className="px-2 py-1 bg-neutral-50 border-y border-neutral-300">
             <div className="font-semibold py-1 ">{selectedReferences.length} References</div>
           </div>
-          <div className="px-2 py-1 font-mono text-xs">
+          <div className="px-2 py-1 font-mono text-sm">
             {selectedReferences.map((ref) => (
               <div className="flex items-center gap-2 px-2 py-1">
                 <div className="text-neutral-500">{ref.line}</div>
