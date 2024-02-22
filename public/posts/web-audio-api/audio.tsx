@@ -115,7 +115,7 @@ function AudioVisualization() {
 
 export function Audio() {
   return (
-    <div className="flex items-start justify-center bg-zinc-800 rounded-2xl p-6">
+    <div className="flex items-start justify-center">
       <AudioVisualization />
     </div>
   )
