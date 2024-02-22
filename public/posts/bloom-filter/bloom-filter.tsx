@@ -144,10 +144,6 @@ export function BloomFilter() {
 
   return (
     <div className="flex flex-col w-full space-y-3">
-      <div className="flex items-center gap-3">
-        <div className="text-3xl font-semibold">Bloom filter visualized</div>
-      </div>
-
       <div>
         <form onSubmit={(e) => handleInsert(e)} className="space-x-2">
           <label>

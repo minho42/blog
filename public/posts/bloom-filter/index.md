@@ -1,5 +1,5 @@
 ---
-title: Bloom filter
+title: Bloom filter visualized
 date: "2023-08-16"
 ---
 
