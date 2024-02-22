@@ -101,6 +101,7 @@ export function BloomFilter() {
       setAddedTexts([...addedTexts, inputInsertRef.current.value.trim()])
     }
     inputInsertRef.current.value = ""
+    setSearchResultText("")
   }
 
   const handleSearch = (e) => {
