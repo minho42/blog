@@ -3,20 +3,20 @@ title: Homoglyph slashes in URL
 date: "2023-05-18"
 ---
 
-Read a blog post, [The Dangers of Google’s .zip TLD](https://medium.com/@bobbyrsec/the-dangers-of-googles-zip-tld-5e1e675e59a5), 
+Read a blog post, [The Dangers of Google’s .zip TLD](https://medium.com/@bobbyrsec/the-dangers-of-googles-zip-tld-5e1e675e59a5),
 from [@bobbyrsec](https://twitter.com/bobbyrsec)
 
 ### TIL: "@" and "/" in URL redirection
 
-[URI on Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Example_URIs)
+[URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Example_URIs)
 
 ```shell
         userinfo   host  port
         ┌──┴──┐ ┌───┴──┐ ┌┴┐
 https://user.pw@host.com:123
 └─┬─┘   └─────────┬────────┘
-scheme      authority           
-  
+scheme      authority
+
 ```
 
 ### Redirect examples
@@ -25,7 +25,7 @@ URL with @ operator: redirect to what comes after "@"
 
 ```shell
 # URL with @ operator
-https://google.com@bing.com 
+https://google.com@bing.com
         └───┬────┘ └───┬──┘
          userinfo     host
 
@@ -47,17 +47,18 @@ https://legit.com@evil.com
 ftp://cnn.example.com&story=breaking_news@10.0.0.1/top_story.htm
 ```
 
-✅ Legitimate slash: 
+✅ Legitimate slash:
+
 - / [U+002F]
 
+❌ [Homoglyph slashs](https://en.wiktionary.org/wiki//):
 
-❌ [Homoglyph slashs](https://en.wiktionary.org/wiki//): 
 - ⁄ [U+2044]
 - ∕ [U+2215]
 - ／ [U+FF0F]
 - ⧸ [U+29F8]
 
-Slash before "@" doesn't redirect to what comes after "@", 
+Slash before "@" doesn't redirect to what comes after "@",
 but homoglyph slashes will redirect to what comes after "@".
 
 ```shell
@@ -73,9 +74,9 @@ https://google.com/search@bing.com
 ```shell
                 ❌ ∕ [U+2215]
                  ┌┴┐
-https://google.com∕search@bing.com 
+https://google.com∕search@bing.com
         └───────┬───────┘ └───┬──┘
              userinfo        host
-             
+
 -> bing.com 💀
 ```

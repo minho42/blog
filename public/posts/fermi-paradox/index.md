@@ -3,16 +3,17 @@ title: Fermi paradox
 date: "2023-12-09"
 ---
 
-Fermi paradox ([wiki](https://en.wikipedia.org/wiki/Fermi_paradox))
+[Fermi paradox](https://en.wikipedia.org/wiki/Fermi_paradox)
 
-> The Fermi paradox is the discrepancy between the lack of conclusive evidence of advanced extraterrestrial life and the apparently high likelihood of its existence. As a 2015 article put it, 
+> The Fermi paradox is the discrepancy between the lack of conclusive evidence of advanced extraterrestrial life and the apparently high likelihood of its existence. As a 2015 article put it,
 > "If life is so easy, someone from somewhere must have come calling by now."
-> 
+>
 > ...
-> 
+>
 > "But where is everybody?"
 
 Sci-fi writer Andy Weir says in his interview with Adam Grant ([link](https://youtu.be/EEuoZrlLfgo?si=R08oJNGH4pINm0wE) 21:45):
+
 - "the nearest life might be like two million light years away"
 - "They are too far away"
 

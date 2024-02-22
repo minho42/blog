@@ -3,7 +3,7 @@ title: Brace expansion
 date: "2022-12-01"
 ---
 
-[Brace expansion on Wiki](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion>)
+[Brace expansion](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion>)
 
 <Tweet id="1594713484129931264" />
 
