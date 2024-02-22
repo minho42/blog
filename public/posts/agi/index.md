@@ -1,5 +1,5 @@
 ---
-title: AGI
+title: AGI (2023)
 date: "2023-03-31"
 ---
 
@@ -24,4 +24,4 @@ But like I mentioned in the above tweet, current technologies of AI is nowhere n
 
 #### Related
 
-[AGI2](/posts/agi2)
+[AGI (2024)](/posts/agi2)
