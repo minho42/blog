@@ -32,10 +32,7 @@ export function DDimer() {
         />
       </div>
       <div>
-        Normal: &lt;= <span className="bg-blue-100 rounded p-1 font-mono">{cutoff}</span> mg/L or
-      </div>
-      <div>
-        Normal: &lt;= <span className="bg-blue-100 rounded p-1 font-mono">{cutoff * 1000}</span> mcg/L{" "}
+        Normal: &lt;= <span className="bg-blue-100 rounded p-1 font-mono">{cutoff}</span> mg/L
       </div>
     </div>
   )
