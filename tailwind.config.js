@@ -4,4 +4,5 @@ module.exports = {
     extend: {},
   },
   plugins: [require("@tailwindcss/typography")],
+  safelist: [{ pattern: /grid-cols-.+/ }],
 }
