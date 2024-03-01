@@ -209,7 +209,7 @@ export function MemoryGame() {
           <div>status: </div>
           <div className="bg-lime-200">{status}</div>
         </div>
-        <div>matchedArray: {JSON.stringify(matchedArray)}</div>
+        <div className="flex break-all">matchedArray: {JSON.stringify(matchedArray)}</div>
         <div>matchCount: {matchCount}</div>
         <div>unmatchCount: {unmatchCount}</div>
 
