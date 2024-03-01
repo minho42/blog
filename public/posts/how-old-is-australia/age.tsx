@@ -1,4 +1,6 @@
 export function Age() {
+  // result is static output from build time, not dynamic from client side
+
   const currentYear = new Date().getFullYear()
   const age = currentYear - 1901
   return (
