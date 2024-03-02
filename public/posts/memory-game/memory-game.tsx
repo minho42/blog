@@ -175,6 +175,7 @@ export function MemoryGame() {
 
   function handleSizeDown() {
     if (gameSize - 2 >= SIZE_MIN) {
+      handleReset()
       setGameSize(gameSize - 2)
       setStatus("down sized")
     }
@@ -182,6 +183,7 @@ export function MemoryGame() {
 
   function handleSizeUp() {
     if (gameSize + 2 <= SIZE_MAX) {
+      handleReset()
       setGameSize(gameSize + 2)
       setStatus("up sized")
     }
@@ -241,16 +243,17 @@ export function MemoryGame() {
               {imageArray.map((image, i) => (
                 <div
                   key={i}
-                  className="relative flex flex-col items-center justify-start bg-neutral-900 rounded-md overflow-hidden gap-1"
+                  className="relative aspect-square flex flex-col items-center justify-start bg-neutral-900 rounded-md overflow-hidden gap-1"
                 >
                   <div
                     onClick={() => handleSelect(i)}
                     id="overlay"
-                    className={`absolute w-full h-full bg-neutral-800 
+                    className={`absolute inset-0 w-full h-full bg-neutral-800 
                   transition-opacity duration-500 ease-in-out
+                  
                   ${overlayArray[i] ? "opacity-0" : "opacity-100"}`}
                   ></div>
-                  <img src={`./images/${image}`} width={86} height={64} />
+                  <img className="h-full" src={`./images/${image}`} />
                 </div>
               ))}
             </div>
