@@ -196,14 +196,14 @@ export function MemoryGame() {
         <div>SIZE_MAX: {SIZE_MAX}</div>
         <div>gameSize: {gameSize}</div>
         <div className="flex gap-1">
-          <div>first: imageArray[{firstImageSelected}]</div>
-          <div className="bg-neutral-200">
+          <div>first: [{firstImageSelected}]</div>
+          <div className="bg-neutral-200 break-words">
             {imageArray[firstImageSelected]?.split(".").slice(0, -1).join(".").replace(/-/g, " ")}
           </div>
         </div>
         <div className="flex gap-1">
-          <div>second: imageArray[{secondImageSelected}]</div>
-          <div className="bg-neutral-200">
+          <div>second: [{secondImageSelected}]</div>
+          <div className="bg-neutral-200 break-words">
             {imageArray[secondImageSelected]?.split(".").slice(0, -1).join(".").replace(/-/g, " ")}
           </div>
         </div>
