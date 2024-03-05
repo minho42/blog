@@ -116,7 +116,7 @@ export function MemoryGame() {
   }
 
   function handleMatched() {
-    setStatus("match")
+    setStatus("Match")
     setIsMatched(true)
     setMatchCount(matchCount + 1)
     setMatchedArray((current) => {
@@ -134,7 +134,7 @@ export function MemoryGame() {
     }
   }
   function handleUnmatched() {
-    setStatus("no match")
+    setStatus("No match")
     setIsMatched(false)
     setUnmatchCount(unmatchCount + 1)
     setResetSelectedInSeconds(1.5)
@@ -160,24 +160,24 @@ export function MemoryGame() {
   function handleReset() {
     setFirstImageSelected(null)
     setSecondImageSelected(null)
-    setStatus("reset")
+    setStatus("Reset")
     setMatchCount(0)
     setUnmatchCount(0)
     setMatchedArray([])
     setOverlayArray(new Array(gameSize * gameSize).fill(false))
   }
 
-  function handleShuffle() {
+  function handleRestart() {
     handleReset()
     setupImages()
-    setStatus("shuffled")
+    setStatus("Restart")
   }
 
   function handleSizeDown() {
     if (gameSize - 2 >= SIZE_MIN) {
       handleReset()
       setGameSize(gameSize - 2)
-      setStatus("down sized")
+      setStatus("Size down")
     }
   }
 
@@ -185,47 +185,49 @@ export function MemoryGame() {
     if (gameSize + 2 <= SIZE_MAX) {
       handleReset()
       setGameSize(gameSize + 2)
-      setStatus("up sized")
+      setStatus("Size up")
     }
   }
 
   function StateInfo() {
     return (
       <div id="info" className="border border-neutral-300 rounded-lg p-3 text-xs font-mono space-y-1">
-        <div>SIZE_MIN: {SIZE_MIN}</div>
-        <div>SIZE_MAX: {SIZE_MAX}</div>
-        <div>gameSize: {gameSize}</div>
         <div className="flex gap-1">
-          <div>first: [{firstImageSelected}]</div>
+          <div>First: </div>
           <div className="bg-neutral-200 break-words">
             {imageArray[firstImageSelected]?.split(".").slice(0, -1).join(".").replace(/-/g, " ")}
           </div>
         </div>
         <div className="flex gap-1">
-          <div>second: [{secondImageSelected}]</div>
+          <div>Second: </div>
           <div className="bg-neutral-200 break-words">
             {imageArray[secondImageSelected]?.split(".").slice(0, -1).join(".").replace(/-/g, " ")}
           </div>
         </div>
         <div className="flex gap-1">
-          <div>status: </div>
+          <div>Status: </div>
           <div className="bg-lime-200">{status}</div>
         </div>
-        <div className="flex break-all">matchedArray: {JSON.stringify(matchedArray)}</div>
-        <div>matchCount: {matchCount}</div>
-        <div>unmatchCount: {unmatchCount}</div>
+        <div>Try: {matchCount + unmatchCount}</div>
 
-        <div className="flex justify-evenly gap-2">
-          <button className="bg-amber-300 font-semibold rounded p-2" onClick={handleReset}>
-            Reset
+        <div className="flex justify-center gap-2">
+          <button className="bg-amber-300 font-semibold rounded p-2" onClick={handleRestart}>
+            Restart
           </button>
-          <button className="bg-amber-300 font-semibold rounded p-2" onClick={handleShuffle}>
-            Shuffle
-          </button>
-          <button className="bg-amber-300 font-semibold rounded p-2" onClick={handleSizeDown}>
+          <button
+            className={`
+          ${gameSize > SIZE_MIN ? "bg-amber-300" : "bg-neutral-100 text-neutral-500 cursor-not-allowed"}
+           font-semibold rounded p-2`}
+            onClick={handleSizeDown}
+          >
             Size down
           </button>
-          <button className="bg-amber-300 font-semibold rounded p-2" onClick={handleSizeUp}>
+          <button
+            className={`
+          ${gameSize < SIZE_MAX ? "bg-amber-300" : "bg-neutral-200 text-neutral-500 cursor-not-allowed"}
+           font-semibold rounded p-2`}
+            onClick={handleSizeUp}
+          >
             Size up
           </button>
         </div>
@@ -249,8 +251,6 @@ export function MemoryGame() {
                     onClick={() => handleSelect(i)}
                     id="overlay"
                     className={`absolute inset-0 w-full h-full bg-neutral-800 
-                  transition-opacity duration-500 ease-in-out
-                  
                   ${overlayArray[i] ? "opacity-0" : "opacity-100"}`}
                   ></div>
                   <img className="h-full" src={`./images/${image}`} />
