@@ -9,4 +9,4 @@ Stack: Next.js + Firebase + Tailwind CSS
 
 [repo](https://github.com/minho42/roster-nextjs)
 
-![screenshot](/posts/roster-nextjs/screen.jpg)
+![screenshot](/posts/roster-nextjs/screen.webp)
