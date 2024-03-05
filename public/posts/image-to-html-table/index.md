@@ -13,7 +13,7 @@ Convert image to HTML table
 
 ### Input
 
-![tango](/posts/image-to-html-table/tango.png)
+![tango](/posts/image-to-html-table/tango.webp)
 
 ### Output
 
