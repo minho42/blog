@@ -7,7 +7,7 @@ date: "2024-02-19"
 
 ## How I think AGI could ever be achieved, if it's possible
 
-![feedback](/posts/agi2/feedback.png)
+![feedback](/posts/agi2/feedback.webp)
 
 #### Related
 
