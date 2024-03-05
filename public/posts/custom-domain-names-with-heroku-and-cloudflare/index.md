@@ -25,7 +25,7 @@ Provided your app is deployed on Heroku, and domain name bought from Cloudflare
 
 Copy auto generated `DNS Target` strings from above 2
 
-![Heroku DNS settings](./heroku-settings-dns.png)
+![Heroku DNS settings](/posts/custom-domain-names-with-heroku-and-cloudflare/heroku-settings-dns.png)
 
 ### 2. Cloudflare
 
@@ -48,6 +48,6 @@ Name: www
 Target: regular-viper-s91fyxmyiai...
 ```
 
-![Cloudflare DNS settings](./cloudflare-dns.png)
+![Cloudflare DNS settings](/posts/custom-domain-names-with-heroku-and-cloudflare/cloudflare-dns.png)
 
 ### End
