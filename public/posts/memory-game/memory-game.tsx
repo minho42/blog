@@ -191,7 +191,7 @@ export function MemoryGame() {
 
   function StateInfo() {
     return (
-      <div id="info" className="border border-neutral-300 rounded-lg p-3 text-xs font-mono space-y-1">
+      <div id="info" className="border border-neutral-300 rounded-lg p-3 text-sm space-y-1">
         <div className="flex gap-1">
           <div>First: </div>
           <div className="bg-neutral-200 break-words">
