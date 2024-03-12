@@ -60,7 +60,7 @@ Fix: downgrade `remark-gfm` from 4.0.0 to 3.0.1
 
 Fix: I don't know. Just removed `<-`
 
-4. Not escaping characters
+4. Not escaping special characters in Markdown
 
 Fix: escape `<>`, `{}`, `${}`, etc.
 
