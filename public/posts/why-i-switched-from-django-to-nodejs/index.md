@@ -8,6 +8,7 @@ date: "2022-02-01"
 from a hobby dev point of view
 
 ### why django -> nodejs
+
 - **have to deal with javascript anyway**
 - **native async support vs non trivial hard-to-grasp-async**
 - context switching between python and javascript
@@ -18,9 +19,10 @@ from a hobby dev point of view
 - faster/auto server reloading vs slow/manual
 - got used to javascript: overcame the hurdle of callbacks, brackets
 
-### why I wnat to go back to django
+### why I want to go back to django
+
 - **miss django ORM**
 - love python
 - felt much more productive when using django
-- debugging seems straighforward with django
+- debugging seems straightforward with django
 - feels more secure
