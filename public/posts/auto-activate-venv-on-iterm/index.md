@@ -41,17 +41,13 @@ activate() {
 
 This will replace the above alias "`activate`"; it is essentially the same but by using this function, we can ignore following error message when there is no virtual environment (i.e. ".venv")
 
-> TIL. I can make a shell script/function inside `.zshrc` instead of making a separate `*.sh` file.
-
 ```shell
 # error message
 source: no such file or directory: .venv/bin/activate
 ```
 
+> TIL. I can make a shell script/function inside `.zshrc` instead of making a separate `*.sh` file.
+
 ### 2. Set iTerm to call this function on a new tap
 
 iTerm2: Preferences -> Profiles -> Command: Login Shell -> Send text at start: "`activate`"
-
-### Issues
-
-- This slows down iTerm2 significantly
