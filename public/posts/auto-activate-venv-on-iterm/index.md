@@ -25,7 +25,7 @@ alias createvenv="uv venv && source .venv/bin/activate"
 
 Here's how to automate this.
 
-### 1. Create function in the .zshrc instead of an alias
+### 1. Create a function in the .zshrc
 
 ```shell
 # ~/.zshrc
