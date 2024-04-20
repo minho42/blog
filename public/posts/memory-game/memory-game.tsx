@@ -215,7 +215,7 @@ export function MemoryGame() {
             Restart
           </button>
           <button
-            className={`
+            className={`  
           ${gameSize > SIZE_MIN ? "bg-amber-300" : "bg-neutral-100 text-neutral-500 cursor-not-allowed"}
            font-semibold rounded p-2`}
             onClick={handleSizeDown}
