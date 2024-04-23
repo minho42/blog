@@ -40,7 +40,7 @@ My repo where I used the package: [app/[slug]/page.tsx](https://github.com/minho
 
 ## Errors encountered
 
-1. [Async Server Component TypeScript Error](https://nextjs.org/docs/app/building-your-application/configuring/typescript#async-server-component-typescript-error)
+### 1. [Async Server Component TypeScript Error](https://nextjs.org/docs/app/building-your-application/configuring/typescript#async-server-component-typescript-error)
 
 > 'Promise\<Element>' is not a valid JSX element
 
@@ -50,17 +50,17 @@ Fix: update `@types/react` and `typescript`
 npm i -D @types/react/latest typescript/latest
 ```
 
-2. cannot set properties of undefined (setting 'intable')
+### 2. cannot set properties of undefined (setting 'intable')
 
 Fix: downgrade `remark-gfm` from 4.0.0 to 3.0.1
 
-3. Use of `<-`
+### 3. Use of `<-`
 
 > Unexpected character `-` (U+002D) before name, expected a character that can start a name, such as a letter, `$`, or `_`
 
 Fix: I don't know. Just removed `<-`
 
-4. Not escaping special characters in Markdown
+### 4. Not escaping special characters in Markdown
 
 Fix: escape `<>`, `{}`, `${}`, etc.
 
