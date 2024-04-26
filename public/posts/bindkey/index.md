@@ -1,5 +1,5 @@
 ---
-title: F5 to reload zsh, bindkey
+title: TIL bindkey, F5 to reload zsh
 date: "2024-04-25"
 ---
 
