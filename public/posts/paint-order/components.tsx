@@ -1,5 +1,3 @@
-export { Tweet } from "react-tweet"
-
 export function TextWithPaintOrder({ text }) {
   const styles = {
     WebkitTextStrokeColor: "black",
