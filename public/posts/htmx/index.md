@@ -5,7 +5,7 @@ date: "2024-01-04"
 
 Tried HTMX with FullCalendar for just a tiny bit to replace my current roster project which is a Next.js fullstack app.
 
-Idea of mostly using server side, and minimally deal with the frontend interaction is really temping and hence the hype. When I was into Django, I didn't know JavaScript and I did want to write as less JavaScript as I can.
+Idea of mostly using server side, and minimally deal with the frontend interaction is really temping and hence the hype. When I was into Django, I didn't know JavaScript and I did want to write as little JavaScript as I could.
 
 I used HTMX and FullCalendar using CDN. Developer experience of not using a build system is not pleasant as there are no autocompletes and editor doesn’t know about the available attributes/options. This made using library so hard, and I didn't pursue further and ditched the project.
 
