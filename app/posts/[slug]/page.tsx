@@ -30,7 +30,7 @@ export default async function PostPage({ params }) {
         <h1 className="text-3xl">{data.title}</h1>
       </section>
 
-      <section className="max-w-sm sm:max-w-2xl prose prose-lg prose-pre:p-0 px-2 sm:px-0">
+      <section className="max-w-sm sm:max-w-2xl prose prose-pre:p-0 px-2 sm:px-0">
         {content && (
           // https://github.com/hashicorp/next-mdx-remote
           <MDXRemote
