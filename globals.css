@@ -12,7 +12,6 @@ body {
 
 .prose {
   color: #000000;
-  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -43,6 +42,7 @@ body {
 
 .prose :where(a):not(:where([class~="not-prose"] *, .react-tweet-theme *)) {
   @apply text-blue-600 !important;
+  font-weight: 400 !important;
 }
 
 .prose,
@@ -89,4 +89,19 @@ pre > code {
 
 img {
   max-width: 24rem;
+}
+
+.react-tweet-theme {
+  --tweet-body-font-size: 1rem !important;
+}
+
+.tweet-header_authorFollow__w_j4h,
+.tweet-info_infoLink__xdgYO,
+.tweet-replies_replies__PUxl8,
+.tweet-actions_actions__UDw7H {
+  display: none !important;
+}
+
+.tweet-info_info__ll_kH {
+  margin-top: 1rem !important;
 }
