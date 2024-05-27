@@ -51,6 +51,14 @@ body {
   margin-top: 0em !important;
 }
 
+.prose,
+.prose-lg {
+  :where(div.react-tweet-theme img) {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+  }
+}
+
 .prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
   content: none;
 }
@@ -104,4 +112,14 @@ img {
 
 .tweet-info_info__ll_kH {
   margin-top: 1rem !important;
+}
+
+.tweet-container_root__0rJLq:hover {
+  background-color: var(--tweet-bg-color) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tweet-container_root__0rJLq:hover {
+    background-color: var(--tweet-bg-color) !important;
+  }
 }
