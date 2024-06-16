@@ -5,7 +5,7 @@ date: "2024-06-16"
 
 ## This doesn't work
 
-![Xcode Device Orientation](xcode-device-orientation.webp)
+![Xcode Device Orientation](/posts/swiftui-how-to-lock-orientation/xcode-device-orientation.webp)
 
 ## What works
 
