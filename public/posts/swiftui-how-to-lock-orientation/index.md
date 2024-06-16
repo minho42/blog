@@ -1,0 +1,59 @@
+---
+title: How to lock orientation to portrait in SwiftUI
+date: "2024-06-16"
+---
+
+## This doesn't work
+
+![Xcode Device Orientation](xcode-device-orientation.webp)
+
+## What works
+
+`AppDelegate.swift`
+
+```swift
+// AppDelegate.swift
+import SwiftUI
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    static var orientationLock = UIInterfaceOrientationMask.portrait
+
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return AppDelegate.orientationLock
+    }
+}
+```
+
+`MainApp.swift`
+
+```swift
+// MainApp.swift
+import SwiftUI
+
+@main
+struct MainApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
+`ContentView.swift`
+
+```swift
+// ContentView.swift
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hi, I'm locked 🔒")
+    }
+}
+
+```
+
+Ref: https://tutorial101.blogspot.com/2021/09/swiftui-view-portrait-mode-lock.html
