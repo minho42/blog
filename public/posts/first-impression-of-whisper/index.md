@@ -4,10 +4,12 @@ date: "2022-09-24"
 ---
 
 ### Tried out [openai/whisper](https://github.com/openai/whisper)
+
 > Whisper is a general-purpose speech recognition model.
 
 ### Install
-> It also requires the command-line tool ffmpeg to be installed on your system, 
+
+> It also requires the command-line tool ffmpeg to be installed on your system,
 
 ```shell
 # on MacOS
@@ -15,7 +17,6 @@ brew install ffmpeg
 ```
 
 OMG. Installing one package on brew takes so long
-
 
 Had some errors trying to run whisper
 
@@ -27,11 +28,13 @@ Traceback ...
 ```
 
 Fixed the error by running following command (change 3.8 to your version of python)
+
 ```shell
 /Applications/Python\ 3.8/Install\ Certificates.command
 ```
 
-### Run 
+### Run
+
 Command I used for transcribing
 
 ```shell
@@ -39,13 +42,15 @@ whisper audio_en.mp3 --model base --language en
 whisper audio_ko.mp3 --model base --language ko
 ```
 
-Using any other models bigger than 'base' was way too slow for my old macbook (2015).
+Using any other models bigger than 'base' was way too slow for my old macbook (2014).
 
 ### Output
+
 Command line shows some sample results on the terminal.
-Generates transcribed files: *.vtt and *.txt
+Generates transcribed files: _.vtt and _.txt
 
 ### Impressions
+
 Awesome speech recognition for English.
 It can pick up my voice reading stuff in English with some accent flawlessly.
 
