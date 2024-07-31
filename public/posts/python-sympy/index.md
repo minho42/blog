@@ -33,7 +33,4 @@ Change the equations like below to one side
 [3]
 ```
 
-Used sympy in [my solution](https://github.com/minho42/adventofcode/blob/master/2022/21.py) 
-for Advent of Code challenge [2022/day/21](https://adventofcode.com/2022/day/21)
-
-
+Used sympy in my solution for Advent of Code challenge [2022/day/21](https://adventofcode.com/2022/day/21)

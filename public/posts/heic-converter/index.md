@@ -5,7 +5,7 @@ date: "2023-12-20"
 
 CLI program that converts HEIC to jpg
 
-## Python ([repo](https://github.com/minho42/heic-converter-py))
+## Python
 
 ### Install
 
@@ -46,7 +46,7 @@ python heic_converter.py image.HEIC
 
 ---
 
-## Node ([repo](https://github.com/minho42/heic-converter-js))
+## Node
 
 ### Install
 

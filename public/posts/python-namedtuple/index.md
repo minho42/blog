@@ -22,8 +22,7 @@ nt(value='item', id='1')
 ```
 
 How I used (unnamed) tuple
-in [my solution](https://github.com/minho42/adventofcode/blob/master/2022/20.py) 
-for Advent of Code challenge [2022/day/20](https://adventofcode.com/2022/day/20)
+in my solution for Advent of Code challenge [2022/day/20](https://adventofcode.com/2022/day/20)
 
 ```python
 >>> items = ['🍚', '🍞']

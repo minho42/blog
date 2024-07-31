@@ -7,8 +7,6 @@ Convert image to HTML table
 
 [https://image-to-html-table.pages.dev](https://image-to-html-table.pages.dev/)
 
-[repo](https://github.com/minho42/image-to-html-table)
-
 ## Example
 
 ### Input

@@ -3,7 +3,7 @@ title: Generate a barcode
 date: "2022-06-05"
 ---
 
-Making my own [coles gift card tracker app](https://github.com/minho42/coles),
+Making my own coles gift card tracker app,
 I needed to generate a barcode programmatically. I needed what Stocard generates which was found to be 'code128'. This barcode class is also the default in JsBarcode for javascript.
 
 ## With Python

@@ -25,8 +25,6 @@ The package I used before, `react-markdown`, didn't support `js` as code block l
 
 `rehype-pretty-code` supports `js`.
 
-My repo where I used the package: [app/[slug]/page.tsx](https://github.com/minho42/blog/blob/master/app/%5Bslug%5D/page.tsx)
-
 ### Packages used
 
 - next-mdx-remote

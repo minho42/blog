@@ -3,8 +3,6 @@ title: Tech stack for this blog
 date: "2022-04-25"
 ---
 
-[https://github.com/minho42/blog](https://github.com/minho42/blog)
-
 ### Frontend
 
 - Next.js

@@ -9,12 +9,11 @@ There is a built-in Python function called `map`.
 
 Python official [documentation](https://docs.python.org/3/library/functions.html#map) has it listed...
 
-> map(function, iterable, *iterables)
-> 
->Return an iterator that applies function to every item of iterable, yielding the results.
+> map(function, iterable, \*iterables)
+>
+> Return an iterator that applies function to every item of iterable, yielding the results.
 
 But doesn't have any example code (maybe a good opportunity to contribute?)
-
 
 Examples
 
@@ -43,8 +42,8 @@ Examples
 [2, 4, 6, 8]
 ```
 
+Snippets from [hyper-neutrino](https://github.com/hyper-neutrino/advent-of-code/blob/main/2022/day04p1.py)
 
-Snippets from [minho42](https://github.com/minho42/adventofcode/blob/master/2022/04.py), [hyper-neutrino](https://github.com/hyper-neutrino/advent-of-code/blob/main/2022/day04p1.py)
 ```python
 line = "1-2,3-4"
 

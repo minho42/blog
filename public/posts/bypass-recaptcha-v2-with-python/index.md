@@ -24,10 +24,9 @@ I have tried to bypass reCAPTCHA this coles balance checking site with puppeteer
 
 Became aware of new testing tool Playwright that is an alternative to puppeteer/selenium.
 
-So I tried again, and this time it worked, although more often than not it still fails to bypass and asks to select images. I consider this a win for me as I can just manually select images for checking my gift card balances. Traking cards and typing would be done effortlessly.
+So I tried again, and this time it worked, although more often than not it still fails to bypass and asks to select images. I consider this a win for me as I can just manually select images for checking my gift card balances. Tracking cards and typing would be done effortlessly.
 
 Made a simple django app on top of the scraping script.
-https://github.com/minho42/coles
 
 Below python snippet shows how reCAPTCHA version 2 can be bypassed.
 
@@ -82,8 +81,6 @@ Tried same code with Playwright in Node.js, but kept failing without a single su
 [Playwright for Python](https://playwright.dev/python/docs/api/class-playwright)
 
 ### Code snippet
-
-From my [coles gift card tracker app](https://github.com/minho42/coles)
 
 ```python
 from playwright.sync_api import sync_playwright

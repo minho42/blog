@@ -53,6 +53,3 @@ deque([1, 2, 3, 0])
 >>> d.reverse()
 deque([0, 3, 2, 1])
 ```
-
-My use case 
-[Advent of Code 2022 Day5](https://github.com/minho42/adventofcode/blob/master/2022/05.py)
