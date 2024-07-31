@@ -6,8 +6,6 @@ date: "2023-08-25"
 What's the implication of Microsoft's default text editor Notepad to those who can't avoid.
 Pet peeve of having to use Windows Notepad on a public computer.
 
-<Tweet id="1686740368941805568" />
-
 Where I work, I share Windows computers with various healthcare professionals. Sharing computer is frustrating.
 
 Most used software is PowerChart by Cerner where medical/nursing progress notes reside.
