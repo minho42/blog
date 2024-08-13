@@ -11,11 +11,11 @@ type Book = {
 
 function BookItem({ book }: { book: Book }) {
   return (
-    <section className="flex flex-col justify-start px-4 py-2 gap-2 rounded-md bg-neutral-100">
+    <section className="flex flex-col justify-start px-4 py-2 gap-2 rounded-xl bg-neutral-100">
       <div>
         <div className="flex gap-2">
           {book.url ? (
-            <Link className="text-blue-600 font-medium underline underline-offset-1" href={book.url}>
+            <Link className="font-medium underline underline-offset-1" href={book.url}>
               {book.title}
             </Link>
           ) : (

@@ -23,6 +23,20 @@ export default function Navbar() {
       >
         Books
       </Link>
+      |
+      <Link
+        href="/projects"
+        className={`${pathname.includes("/projects") ? "text-black font-semibold underline" : ""}`}
+      >
+        Projects
+      </Link>
+      |
+      <Link
+        href="/about"
+        className={`${pathname.includes("/about") ? "text-black font-semibold underline" : ""}`}
+      >
+        About
+      </Link>
     </nav>
   )
 }

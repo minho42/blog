@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Medical Abbreviations",
+    "image": "/projectIcons/abbr.png",
+    "url": "https://apps.apple.com/us/app/medical-abbreviations/id1005507112",
+    "active": true
+  },
+  {
+    "name": "Australian Childcares",
+    "image": "/projectIcons/childcare.png",
+    "url": "https://apps.apple.com/us/app/australian-childcares/id6621199553",
+    "active": true
+  },
+  {
+    "name": "Roster",
+    "image": "/projectIcons/roster.png",
+    "url": "",
+    "active": false
+  }
+]
