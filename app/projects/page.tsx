@@ -15,7 +15,7 @@ export default async function Page() {
         <div className="px-4 py-1">
           <h1 className="font-semibold text-3xl">Projects</h1>
           <div className="text-sm text-neutral-500">
-          {activeProjects.length} iOS apps
+          {activeProjects.length} projects
             </div>
       </div>
 
