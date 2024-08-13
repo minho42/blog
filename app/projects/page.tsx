@@ -19,7 +19,7 @@ export default async function Page() {
             </div>
       </div>
 
-      <article className="grid grid-cols-2 md:grid-cols-3 gap-3 px-4 py-2">
+      <article className="grid grid-cols-2 md:grid-cols-3 gap-3 px-2 py-2">
         {activeProjects.map((project) => (
           <ProjectItem key={project.name} project={project} />
         ))}
@@ -31,13 +31,15 @@ export default async function Page() {
 
 function ProjectItem({ project }: { project: Project }) {
   return (
-    <a className="hover:underline" href={project.url} target="_blank" rel="noopener noreferrer">
-      <div className="flex flex-col gap-1.5">
-        <img className="size-32 border border-neutral-200 rounded-[22.5%]" src={project.image} alt={project.name} />
-        <div className="text-sm text-neutral-700">
-          {project.name}
+    <section className="flex flex-col justify-start px-4 py-2 gap-2">
+      <a className="hover:underline" href={project.url} target="_blank" rel="noopener noreferrer">
+        <div className="flex flex-col gap-1.5">
+          <img className="size-32 border border-neutral-200 rounded-[22.5%]" src={project.image} alt={project.name} />
+          <div className="text-sm text-neutral-700">
+            {project.name}
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </section>
   )
 }
