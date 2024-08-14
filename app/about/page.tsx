@@ -8,10 +8,10 @@ export default function Page() {
 
         <article className="space-y-1 px-4 py-2">
           <ul>
-            <li>🇦🇺 Registered nurse in Sydney</li>
-            <li>💻 Aspiring indie hacker</li>
+            <li>Registered nurse in Sydney</li>
+            <li>Aspiring indie hacker</li>
             
-            <ul className="flex gap-2 mt-8">
+            <ul className="flex text-sm text-neutral-500 gap-2 mt-6">
               <li className="underline"><a href="https://github.com/minho42" target="_blank" rel="noopener noreferrer">GitHub</a></li>
               <li>·</li>
               <li className="underline"><a href="https://www.threads.net/@_minho_" target="_blank" rel="noopener noreferrer">Threads</a></li>
