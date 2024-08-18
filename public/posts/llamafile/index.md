@@ -21,11 +21,11 @@ Here's what worked :
 
 Visit http://127.0.0.1:8080
 
-It works. 
+It works.
 But extremely slow on my macbook
 
 ```shell
-❯ system_profiler SPHardwareDataType sw_vers
+❯ system_profiler SPHardwareDataType
 Hardware:
 
     Hardware Overview:
