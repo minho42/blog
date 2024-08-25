@@ -1,3 +1,4 @@
+import Image from "next/image"
 import projects from "./projects.json"
 
 type Project = {
@@ -31,10 +32,12 @@ function ProjectItem({ project }: { project: Project }) {
     <section className="flex flex-col justify-center items-center">
       <a className="hover:underline" href={project.url} target="_blank" rel="noopener noreferrer">
         <div className="flex flex-col gap-1.5">
-          <img
+          <Image
             className="size-32 border border-neutral-200 rounded-[22.5%]"
             src={project.image}
             alt={project.name}
+            width={120}
+            height={120}
           />
           <div className="text-sm text-neutral-700">{project.name}</div>
         </div>

@@ -7,6 +7,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   output: "export",
+  images: {
+    unoptimized: true,
+    loader: "imgix",
+    path: "/",
+  },
   trailingSlash: true,
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
