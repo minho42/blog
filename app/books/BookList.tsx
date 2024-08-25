@@ -11,7 +11,7 @@ type Book = {
 
 function BookItem({ book }: { book: Book }) {
   return (
-    <section className="flex flex-col justify-start px-4 py-2 gap-2 rounded-xl border border-neutral-200">
+    <section className="flex flex-col justify-start px-4 py-2 gap-2 rounded-xl bg-neutral-100">
       <div>
         <div className="flex gap-2">
           {book.url ? (
