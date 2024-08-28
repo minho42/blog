@@ -3,7 +3,7 @@ title: How to add Google AdMob ad banner in SwiftUI
 date: "2024-08-29"
 ---
 
-## How to add Google AdMob ad banner to SwiftUI with Apple Tracking Transparency (ATT) framework
+How to add Google AdMob ad banner to SwiftUI with Apple Tracking Transparency (ATT) framework
 
 ## Google AdMob
 
@@ -16,21 +16,22 @@ Ad units > Add ad unit > Banner
 
 ## XCode
 
-XCode > File > Add Package Dependencies
+- XCode > File > Add Package Dependencies
 
-    Google Mobile Ads SDK
-    Add Package
+  Add Package: `Google Mobile Ads SDK`
 
-Targets > Info > Custom macOS Application Target Properties
+- Add below to the `Info.plist`
 
+```text
     Add Key: "GADApplicationIdentifier"
     Value: "ca-app-pub-1111222233334444~1234567890"
+```
 
-Ways to add above Key/Value to the `Info.plist`:
+How to add to the `Info.plist`:
 
-1. Hoever over pre-existing Keys and click (+) then fill in the Key and Value pair.
+1. Select project in the Navigation -> Targets > Info > Custom macOS Application Target Properties: Hover over pre-existing Keys and click (+) -> fill in the Key and Value pair.
    This will create `Info` on the Navigator if not already exists. This can be seen as `Info.plist` in the Finder.
-2. If Info exists on the Navigator: right click -> Open As -> Source Code; add below to the XML file.
+2. If Info exists on the Navigator: right click -> Open As -> Source Code; add to the XML file.
 
 ```xml
 <dict>
