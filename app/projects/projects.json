@@ -16,5 +16,11 @@
     "image": "/projectIcons/roster.png",
     "url": "https://apps.apple.com/au/app/roster/id6504712129",
     "active": true
+  },
+  {
+    "name": "Australian Medicines",
+    "image": "/projectIcons/medicine.png",
+    "url": "https://apps.apple.com/us/app/australian-medicines/id6664071242",
+    "active": true
   }
 ]
