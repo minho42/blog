@@ -8,8 +8,7 @@ export default function Page() {
 
       <article className="space-y-1 px-4 py-2">
         <ul>
-          <li>Registered nurse in Sydney</li>
-          <li>Indie hacker</li>
+          <li>Indie hacker in Sydney</li>
 
           <ul className="flex text-sm text-neutral-500 gap-2 mt-6">
             <li className="underline">
