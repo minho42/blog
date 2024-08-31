@@ -5,9 +5,9 @@ date: "2024-08-29"
 
 How to add Google AdMob ad banner to SwiftUI with Apple Tracking Transparency (ATT) framework
 
-## Google AdMob
+## [Google AdMob](https://admob.google.com/v2/home)
 
-Apps > ADD APP
+Apps > [ADD APP](https://admob.google.com/v2/apps/create)
 
 Ad units > Add ad unit > Banner
 
@@ -19,6 +19,23 @@ Ad units > Add ad unit > Banner
 - XCode > File > Add Package Dependencies
 
   Add Package: `Google Mobile Ads SDK`
+
+  You should be able to see the added packages in:
+
+  1. Navigator under "Package Dependencies" e.g.
+
+  ```text
+  > 📦 GoogleMobileAds 11.8.0
+  > 📦 GoogleUserMessagingPlatform 2.5.0
+  ```
+
+  > If you can't see "Package Dependenceis" in the Navigator, try restarting the XCode
+
+  1. Project -> Targets -> General tap -> "Frameworks, Libraries, and Embedded Content"
+
+  ```text
+  🏛️ GoogleMobileAds
+  ```
 
 - Add below to the `Info.plist`
 
