@@ -1,6 +1,6 @@
 ---
 title: How to automate local SQLite updates to GitHub using crontab
-date: "2024-08-29"
+date: "2024-09-03"
 ---
 
 Automate updating the local SQLite database to push to GitHub.
