@@ -1,5 +1,5 @@
 ---
-title: Automate local SQLite updates to GitHub
+title: How to automate local SQLite updates to GitHub using crontab
 date: "2024-08-29"
 ---
 
