@@ -6,10 +6,11 @@ type Project = {
   image: string
   url: string
   active: boolean
+  public: boolean
 }
 
 export default async function Page() {
-  const activeProjects = projects.filter((b) => b.active)
+  const activeProjects = projects.filter((b) => b.public)
 
   return (
     <main className="w-full sm:max-w-2xl mb-20">
@@ -31,14 +32,17 @@ function ProjectItem({ project }: { project: Project }) {
   return (
     <section className="flex flex-col justify-center items-center">
       <a className="hover:underline" href={project.url} target="_blank" rel="noopener noreferrer">
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1.5 relative">
           <Image
-            className="size-32 border border-neutral-200 rounded-[22.5%]"
+            className={`size-32 border border-neutral-200 rounded-[22.5%] ${
+              project.active ? "border-solid" : "border-2 border-dashed grayscale"
+            }`}
             src={project.image}
             alt={project.name}
             width={120}
             height={120}
           />
+          {!project.active && <div className="absolute -top-1 -right-1 text-4xl">🏴‍☠️</div>}
           <div className="text-sm text-neutral-700">{project.name}</div>
         </div>
       </a>
