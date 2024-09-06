@@ -5,12 +5,24 @@ date: "2024-09-07"
 
 I wanted to execute a python scraper without having to navigate to the folder, activate the virtual environment (venv), and run the script.
 
-So, I created an alias to do this. It worked, but after running the aliased command, I was moved to the directory where the file exists, and the venv remained activated.
+So, I created an alias to do this.
 
 ```shell
 alias canirecycle='cd /Users/minho/code/python/return-and-earn && activate && python main.py'
 ```
 
+```shell
+~
+❯ canirecycle
+Checking for woolworths-marsfield...
+Glass:          Full | Not Busy
+Plastic & cans: Full | Not Busy
+
+~/code/python/return-and-earn
+(return-and-earn) ❯
+```
+
+It worked, but after running the aliased command, I was moved to the directory where the file exists, and the venv remained activated.
 I asked ChatGTP if I could do it without changing my current working directory. The solution was very simple: use parentheses `()`.
 
 ```shell
