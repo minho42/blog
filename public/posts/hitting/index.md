@@ -4,6 +4,7 @@ date: "2023-08-06"
 ---
 
 > Edit in 2024-09
+>
 > He's now 3yo, soon-to-be-4yo. Yes, he's still a baby, and nothing we do seems to change his behaviour. Pledging not to use corporal punishment has failed miserably so far.
 
 I don't think I've ever hit my just-turned-6yo daughter.
