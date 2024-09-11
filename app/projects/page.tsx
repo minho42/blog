@@ -31,7 +31,12 @@ export default async function Page() {
 function ProjectItem({ project }: { project: Project }) {
   return (
     <section className="flex flex-col justify-center items-center">
-      <a className="hover:underline" href={project.url} target="_blank" rel="noopener noreferrer">
+      <a
+        className="hover:underline"
+        href={project.active ? project.url : "#"}
+        target={project.active ? "_blank" : "_self"}
+        rel="noopener noreferrer"
+      >
         <div className="flex flex-col gap-1.5 relative">
           <Image
             className={`size-32 border border-neutral-200 rounded-[22.5%] ${
