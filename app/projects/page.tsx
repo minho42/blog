@@ -48,7 +48,7 @@ function ProjectItem({ project }: { project: Project }) {
             height={120}
           />
           {!project.active && <div className="absolute -top-1 -right-1 text-4xl">🏴‍☠️</div>}
-          <div className="text-sm text-neutral-700">{project.name}</div>
+          <div className="text-sm text-neutral-700 text-center">{project.name}</div>
         </div>
       </a>
     </section>
