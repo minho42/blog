@@ -139,6 +139,16 @@ PosixPath('/Users/minhokim/code/adventofcode')
 'post'
 ```
 
+### expanduser
+
+```python
+>>> Path("~").resolve()
+PosixPath('/Users/minho/code/~')
+
+>>> Path("~").expanduser()
+PosixPath('/Users/minho')
+```
+
 ### match(pattern)
 
 ```python
