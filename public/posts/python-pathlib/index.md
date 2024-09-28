@@ -79,16 +79,12 @@ PosixPath('/Users/minho/code')
 '/Users/minho/code'
 ```
 
-### parent
+### parent/parents
 
 ```python
 >>> Path.cwd().parent
 PosixPath('/Users/minho')
-```
 
-### parents
-
-```python
 >>> list(Path.cwd().parents)
 [PosixPath('/Users/minho'), PosixPath('/Users'), PosixPath('/')]
 
@@ -139,7 +135,14 @@ PosixPath('/Users/minho')
 'post'
 ```
 
-### expanduser
+### home()
+
+```python
+>>> Path.home()
+PosixPath('/Users/minho')
+```
+
+### expanduser()
 
 ```python
 >>> Path("~").resolve()
@@ -156,11 +159,48 @@ PosixPath('/Users/minho')
 True
 ```
 
-### glob(pattern)
+### glob(pattern)/rglob(pattern)
 
 ```python
 >>> sorted(Path(".").glob("*.py"))
 [PosixPath('1.py'), PosixPath('2.py')]
+
+# Recursive glob
+>>> sorted(Path(".").rglob("*.py"))
+
+>>> sorted(Path(".").rglob("*.py", case_sensitive=False))
+```
+
+### open()
+
+```python
+>>> p = Path() / "filename"
+>>> with p.open() as f:
+>>>     print(f.read())
+```
+
+### mkdir()/rmdir()
+
+```python
+>>> p = Path.cwd() / "new_dir"
+>>> p
+PosixPath('/Users/minho/code/new_dir')
+>>> p.mkdir()
+>>> p.mkdir(parents=True, exist_ok=True)
+>>> p.rmdir()
+```
+
+### touch()/rename()/replace()/unlink()
+
+```python
+>>> p = Path("new_file.txt")
+>>> p.touch()
+
+>>> p2 = p.rename("new_file2.txt")
+
+>>> p3 = p2.replace("new_file3.txt")
+
+>>> p3.unlink()
 ```
 
 ```python
@@ -178,3 +218,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 >>> Path(__file__)
 NameError: name '__file__' is not defined.
 ```
+
+### See also
+
+[Python Tutorial: Pathlib - The Modern Way to Handle File Paths](https://youtu.be/yxa-DJuuTBI?si=QFFqrdChzbtZYBv9) by Corey Schafer
