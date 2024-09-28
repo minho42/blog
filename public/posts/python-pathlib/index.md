@@ -28,18 +28,18 @@ from pathlib import Path
 PosixPath('.')
 
 >>> Path(".").resolve()
-PosixPath('/Users/minhokim/code/adventofcode/2022')
+PosixPath('/Users/minho/code')
 
->>> (Path(".") / ".." / "..").resolve()
-PosixPath('/Users/minhokim/code')
+>>> (Path(".") / "..").resolve()
+PosixPath('/Users/minho')
 ```
 
 ### as_posix()
 
 ```python
 # Return a string representation of the path with forward slashes (/)
->>> Path('/Users/minhokim/code').as_posix()
-'/Users/minhokim/code'
+>>> Path.cwd().as_posix()
+'/Users/minho/code'
 ```
 
 ### navigating
@@ -73,27 +73,27 @@ False
 
 ```python
 >>> Path.cwd()
-PosixPath('/Users/minhokim/code/adventofcode/2022')
+PosixPath('/Users/minho/code')
 
 >>> str(Path.cwd())
-'/Users/minhokim/code/adventofcode/2022'
+'/Users/minho/code'
 ```
 
 ### parent
 
 ```python
 >>> Path.cwd().parent
-PosixPath('/Users/minhokim/code/adventofcode')
+PosixPath('/Users/minho')
 ```
 
 ### parents
 
 ```python
 >>> list(Path.cwd().parents)
-[PosixPath('/Users/minhokim/code/adventofcode'), PosixPath('/Users/minhokim/code'), PosixPath('/Users/minhokim'), PosixPath('/Users'), PosixPath('/')]
+[PosixPath('/Users/minho'), PosixPath('/Users'), PosixPath('/')]
 
 >>> [*Path.cwd().parents]
-[PosixPath('/Users/minhokim/code/adventofcode'), PosixPath('/Users/minhokim/code'), PosixPath('/Users/minhokim'), PosixPath('/Users'), PosixPath('/')]
+[PosixPath('/Users/minho'), PosixPath('/Users'), PosixPath('/')]
 ```
 
 ### iterdir()
@@ -110,10 +110,10 @@ PosixPath('/Users/minhokim/code/adventofcode')
 
 ```python
 >>> Path.cwd().parts
-('/', 'Users', 'minhokim', 'code', 'adventofcode', '2022')
+('/', 'Users', 'minho', 'code')
 
 >>> str(Path.cwd()).split("/")
-['', 'Users', 'minhokim', 'code', 'adventofcode', '2022']
+['', 'Users', 'minho', 'code']
 ```
 
 ### root
