@@ -236,7 +236,7 @@ export function MemoryGame() {
   }
 
   return (
-    <main>
+    <main className="not-prose">
       <div className="h-scrren flex flex-col items-center justify-center space-y-3 p-3">
         <div className="flex flex-col gap-3">
           <StateInfo />
