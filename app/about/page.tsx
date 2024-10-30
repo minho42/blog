@@ -16,12 +16,6 @@ export default function Page() {
                 GitHub
               </a>
             </li>
-            <li>·</li>
-            <li className="underline">
-              <a href="https://www.threads.net/@_minho_" target="_blank" rel="noopener noreferrer">
-                Threads
-              </a>
-            </li>
           </ul>
         </ul>
       </article>
