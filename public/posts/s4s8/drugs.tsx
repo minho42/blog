@@ -9,17 +9,29 @@ type S8 = {
   brandNames: string[]
 }
 
-function DrugList({ drugs, title, source }: { drugs: S4[] | S8[]; title: string; source: string }) {
+function DrugList({
+  drugs,
+  title,
+  description,
+  source,
+}: {
+  drugs: S4[] | S8[]
+  title: string
+  description: string
+  source: string
+}) {
   return (
     <section className="px-3">
       <h2 className="text-center space-x-1 py-3 text-2xl border-b border-dashed border-neutral-400">
-        <span className="font-semibold">{title}</span>
+        <span className="font-semibold">
+          {title} ({description})
+        </span>
         <span>
-          (
+          [
           <a href={source} target="_blank">
             source
           </a>
-          )
+          ]
         </span>
       </h2>
 
@@ -56,12 +68,14 @@ export function Drugs() {
         <DrugList
           drugs={s4}
           title="S4"
+          description="prescribed restricted substances"
           source="https://www.health.nsw.gov.au/pharmaceutical/Pages/sch4d.aspx"
         />
 
         <DrugList
           drugs={s8}
           title="S8"
+          description="drugs of addiction"
           source="https://www.health.nsw.gov.au/pharmaceutical/Pages/drugs-of-addiction-sch8.aspx"
         />
       </div>
