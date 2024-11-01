@@ -26,5 +26,12 @@
     "url": "https://apps.apple.com/us/app/australian-medicines/id6664071242",
     "active": true,
     "public": true
+  },
+  {
+    "name": "Recycle",
+    "image": "/projectIcons/recycle.png",
+    "url": "",
+    "active": false,
+    "public": true
   }
 ]
