@@ -19,7 +19,7 @@ Ad units > Add ad unit > Banner
 
 - XCode > File > Add Package Dependencies
 
-  Add Package: `Google Mobile Ads SDK`
+  Add Package: `swift-package-manager-google-mobile-ads` (Google Mobile Ads SDK)
 
   You should be able to see the added packages in:
 
@@ -136,8 +136,8 @@ struct AdBannerViewWrapper: View {
         .onAppear {
             adHeight = GADPortraitAnchoredAdaptiveBannerAdSizeWithWidth(UIScreen.main.bounds.width).size.height
         }
-        .onChange(of: scenePhase) { newPhase in
-            if newPhase == .active {
+        .onChange(of: scenePhase) {
+            if scenePhase == .active {
                 DispatchQueue.main.async {
                     shouldReload = true
                 }
@@ -222,10 +222,37 @@ struct AdBannerView: UIViewRepresentable {
 }
 ```
 
-Use in view
+## Use in view
 
 ```swift
 AdBannerViewWrapper()
 ```
 
 Make sure `Test mode` is displayed in the ad banner. If not, grap a new `testDeviceIdentifiers`.
+
+XCode Console:
+
+```text
+<Google> To get test ads on this device, set:
+Objective-C
+	GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[ @"1234" ];
+Swift
+	GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "1234" ]
+```
+
+## [Enable SKAdNetwork to track conversions](https://developers.google.com/admob/ios/privacy/strategies)
+
+XCode Console:
+
+```text
+<Google> <Google:HTML> 1 required SKAdNetwork identifier(s) missing from Info.plist. Missing network(s): Verve. See [Enable SKAdNetwork to track conversions] (https://googlemobileadssdk.page.link/enable-skadnetwork).
+```
+
+Add following (copied from the link) to the `info.plist`
+
+```json
+<key>SKAdNetworkItems</key>
+<array>
+  ...
+</array>
+```
