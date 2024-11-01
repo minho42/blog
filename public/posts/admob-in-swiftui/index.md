@@ -12,6 +12,7 @@ Apps > [ADD APP](https://admob.google.com/v2/apps/create)
 Ad units > Add ad unit > Banner
 
     App ID:     ca-app-pub-1111222233334444~1234567890
+
     Ad unit ID: ca-app-pub-1111222233334444/9876543210
 
 ## XCode
