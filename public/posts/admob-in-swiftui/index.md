@@ -91,22 +91,6 @@ struct MainApp: App {
 }
 ```
 
-### AppDelegate.swift
-
-```swift
-// AppDelegate.swift
-
-import SwiftUI
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-    static var orientationLock = UIInterfaceOrientationMask.portrait
-
-    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return AppDelegate.orientationLock
-    }
-}
-```
-
 ### AdBannerView.swift
 
 ```swift
@@ -134,6 +118,11 @@ struct AdBannerViewWrapper: View {
                 .background(.gray.opacity(0.1))
         }
         .onAppear {
+            Task {
+                if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
+                    await ATTrackingManager.requestTrackingAuthorization()
+                }
+            }
             adHeight = GADPortraitAnchoredAdaptiveBannerAdSizeWithWidth(UIScreen.main.bounds.width).size.height
         }
         .onChange(of: scenePhase) {
@@ -155,26 +144,26 @@ struct AdBannerView: UIViewRepresentable {
         let bannerView = GADBannerView(adSize: adSize)
         bannerView.adUnitID = AD_UNIT_ID
         bannerView.rootViewController = getRootViewController()
-
-        // below line can be removed if Apple Tracking Transparency (ATT) popup appears without delay
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            Task {
-                let authorized = await requestTrackingAuthorization()
-                DispatchQueue.main.async {
-                    self.isTrackingAuthorized = authorized
-                    loadAd(bannerView: bannerView)
-                }
-            }
-        }
-
         return bannerView
     }
 
     func updateUIView(_ uiView: GADBannerView, context: Context) {
         if shouldReload {
-            loadAd(bannerView: uiView)
-            DispatchQueue.main.async {
-                shouldReload = false
+            Task {
+                if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
+                    let status = await ATTrackingManager.requestTrackingAuthorization()
+                    DispatchQueue.main.async {
+                        isTrackingAuthorized = status == .authorized
+                        loadAd(bannerView: uiView)
+                        shouldReload = false
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        isTrackingAuthorized = ATTrackingManager.trackingAuthorizationStatus == .authorized
+                        loadAd(bannerView: uiView)
+                        shouldReload = false
+                    }
+                }
             }
         }
     }
@@ -196,29 +185,6 @@ struct AdBannerView: UIViewRepresentable {
         }
         return windowScene.windows.first?.rootViewController
     }
-
-    @available(iOS 14, *)
-    private func requestTrackingAuthorization() async -> Bool {
-        let status = await ATTrackingManager.requestTrackingAuthorization()
-
-        switch status {
-        case .authorized:
-            print("Tracking authorized 🟢")
-            return true
-        case .denied:
-            print("Tracking denied ❌")
-            return false
-        case .restricted:
-            print("Tracking restricted ❌")
-            return false
-        case .notDetermined:
-            print("Tracking not determined ❌")
-            return false
-        @unknown default:
-            print("Unknown tracking status ❓")
-            return false
-        }
-    }
 }
 ```
 
@@ -228,7 +194,7 @@ struct AdBannerView: UIViewRepresentable {
 AdBannerViewWrapper()
 ```
 
-Make sure `Test mode` is displayed in the ad banner. If not, grap a new `testDeviceIdentifiers`.
+Make sure `Test mode` is displayed in the ad banner. If not (e.g. first time, new install), grab a new `testDeviceIdentifiers`.
 
 XCode Console:
 
@@ -240,7 +206,9 @@ Swift
 	GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "1234" ]
 ```
 
-## [Enable SKAdNetwork to track conversions](https://developers.google.com/admob/ios/privacy/strategies)
+## Info.plist
+
+### [Enable SKAdNetwork to track conversions](https://developers.google.com/admob/ios/privacy/strategies)
 
 XCode Console:
 
@@ -255,4 +223,11 @@ Add following (copied from the link) to the `info.plist`
 <array>
   ...
 </array>
+```
+
+### ATT message
+
+```json
+<key>NSUserTrackingUsageDescription</key>
+<string>This allows us to provide you with a better ads experience.</string>
 ```
