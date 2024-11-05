@@ -7,6 +7,7 @@ type Project = {
   url: string
   active: boolean
   public: boolean
+  wip: boolean
 }
 
 export default async function Page() {
@@ -19,7 +20,7 @@ export default async function Page() {
         <div className="text-sm text-neutral-500">{activeProjects.length} projects</div>
       </div>
 
-      <article className="grid grid-cols-2 md:grid-cols-3 gap-3 px-3 py-3">
+      <article className="grid grid-cols-2 md:grid-cols-3 gap-6 px-3 py-3">
         {activeProjects.map((project) => (
           <ProjectItem key={project.name} project={project} />
         ))}
@@ -37,17 +38,23 @@ function ProjectItem({ project }: { project: Project }) {
         target={project.active ? "_blank" : "_self"}
         rel="noopener noreferrer"
       >
-        <div className="flex flex-col gap-1.5 relative">
+        <div className="flex flex-col justify-center items-center gap-1.5 relative">
           <Image
-            className={`size-32 border border-neutral-200 rounded-[22.5%] ${
-              project.active ? "border-solid" : "border-2 border-dashed grayscale"
+            className={`size-20 border border-neutral-200 rounded-[22.5%] ${
+              project.active && !project.wip ? "border-solid" : "border-2 border-dashed grayscale"
             }`}
-            src={project.image}
+            src={project.image || "/projectIcons/placeholder.png"}
             alt={project.name}
-            width={120}
-            height={120}
+            width={80}
+            height={80}
           />
-          {!project.active && <div className="absolute -top-1 -right-1 text-4xl">🏴‍☠️</div>}
+
+          <div className="flex absolute -top-1 -right-1 text-4xl">
+            {project.wip && <div>🔧</div>}
+            {!project.active && <div>🏴‍☠️</div>}
+          </div>
+          {/* {!project.active && <div className="absolute -top-1 -right-1 text-4xl">🏴‍☠️</div>}
+          {project.wip && <div className="absolute -top-1 -right-1 text-4xl">🚧</div>} */}
           <div className="text-sm text-neutral-700 text-center">{project.name}</div>
         </div>
       </a>

@@ -4,34 +4,47 @@
     "image": "/projectIcons/abbr.png",
     "url": "https://apps.apple.com/us/app/medical-abbreviations/id1005507112",
     "active": true,
-    "public": true
+    "public": true,
+    "wip": false
   },
   {
     "name": "Australian Childcares",
     "image": "/projectIcons/childcare.png",
     "url": "https://apps.apple.com/us/app/australian-childcares/id6621199553",
     "active": true,
-    "public": true
+    "public": true,
+    "wip": false
   },
   {
     "name": "Roster",
     "image": "/projectIcons/roster.png",
     "url": "https://apps.apple.com/au/app/roster/id6504712129",
     "active": true,
-    "public": true
+    "public": true,
+    "wip": false
   },
   {
     "name": "Australian Medicines",
     "image": "/projectIcons/medicine.png",
     "url": "https://apps.apple.com/us/app/australian-medicines/id6664071242",
     "active": true,
-    "public": true
+    "public": true,
+    "wip": false
   },
   {
     "name": "Recycle",
     "image": "/projectIcons/recycle.png",
     "url": "https://apps.apple.com/us/app/recycle/id6737696008",
-    "active": false,
-    "public": false
+    "active": true,
+    "public": true,
+    "wip": true
+  },
+  {
+    "name": "CXR",
+    "image": "",
+    "url": "",
+    "active": true,
+    "public": true,
+    "wip": true
   }
 ]
