@@ -1,9 +1,9 @@
 ---
-title: New app Recycle
+title: New iOS app, Recycle
 date: "2024-11-06"
 ---
 
-Introducing new iOS app: [Recycle](https://apps.apple.com/us/app/recycle/id6737696008)
+Introducing a new iOS app: [Recycle](https://apps.apple.com/us/app/recycle/id6737696008)
 
 A third-party Return-and-Earn iOS app where you can check multiple return points.
 
