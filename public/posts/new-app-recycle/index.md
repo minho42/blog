@@ -10,8 +10,9 @@ A third-party Return-and-Earn iOS app where you can check multiple return points
 Things I used:
 
 - SwiftData
-- List
-- .toolbar
+- SwiftUI
+  - List
+  - .toolbar
   - ToolbarItem
 
 [Repo](https://github.com/minho42/return-and-earn-ios-public)
