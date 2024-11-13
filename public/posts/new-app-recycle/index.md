@@ -9,7 +9,7 @@ A third-party Return-and-Earn iOS app where you can check multiple return points
 
 Things I used:
 
-- SwiftData
+- SwiftData ([thoughts](/posts/tried-swiftdata-2024))
 - SwiftUI
   - List
   - .toolbar
