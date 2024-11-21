@@ -38,13 +38,5 @@
     "active": true,
     "public": true,
     "wip": false
-  },
-  {
-    "name": "CXR",
-    "image": "",
-    "url": "",
-    "active": true,
-    "public": true,
-    "wip": true
   }
 ]
