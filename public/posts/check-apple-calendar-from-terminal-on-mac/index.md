@@ -165,4 +165,4 @@ alias acal='$(find ~/Library/Developer/Xcode/DerivedData -name "CalendarCLI" -ty
 
 ## Repo
 
-https://github.com/minho42/CalendarCLIhttps://github.com/minho42/CalendarCLI
+https://github.com/minho42/CalendarCLI
