@@ -12,7 +12,7 @@ date: "2022-09-24"
 > It also requires the command-line tool ffmpeg to be installed on your system,
 
 ```shell
-# on MacOS
+# on macOS
 brew install ffmpeg
 ```
 

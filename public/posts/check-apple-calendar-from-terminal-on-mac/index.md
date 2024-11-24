@@ -1,5 +1,5 @@
 ---
-title: Check Apple calendar events from terminal on MacOS using Swift
+title: Check Apple calendar events from terminal on macOS using Swift
 date: "2024-11-23"
 ---
 
