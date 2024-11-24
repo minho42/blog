@@ -1,6 +1,6 @@
 ---
 title: Check Apple calendar events from terminal on MacOS using Swift
-date: "2024-11-24"
+date: "2024-11-23"
 ---
 
 ## Create a new Xcode project
