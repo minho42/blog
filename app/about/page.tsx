@@ -8,12 +8,18 @@ export default function Page() {
 
       <article className="space-y-1 px-4 py-2">
         <ul>
-          <li>Indie hacker in Sydney</li>
+          <li>Nurse in Sydney</li>
 
           <ul className="flex text-sm text-neutral-500 gap-2 mt-6">
             <li className="underline">
               <a href="https://github.com/minho42" target="_blank" rel="noopener noreferrer">
                 GitHub
+              </a>
+            </li>
+            ·
+            <li className="underline">
+              <a href="https://minho42.bsky.social" target="_blank" rel="noopener noreferrer">
+                Bluesky
               </a>
             </li>
           </ul>
