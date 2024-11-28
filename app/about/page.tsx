@@ -38,7 +38,7 @@ export default function Page() {
             </li>
             ·
             <li className="underline">
-              <a href="https://minho42.bsky.social" target="_blank" rel="noopener noreferrer">
+              <a href="https://bsky.app/profile/minho42.com" target="_blank" rel="noopener noreferrer">
                 Bluesky
               </a>
             </li>
