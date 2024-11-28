@@ -9,10 +9,7 @@ export default function Page() {
       <article className="space-y-1 px-4 py-2">
         <ul>
           <li>
-            <p>
-              Decided to quit nursing after 12+ years of service, hoping to transition into tech as a junior
-              developer.
-            </p>
+            <p></p>
           </li>
 
           <ul className="flex text-sm text-neutral-500 gap-2 mt-6">
