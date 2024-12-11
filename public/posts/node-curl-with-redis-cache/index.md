@@ -11,7 +11,7 @@ provided node.js and redis are installed on your macos
 
 ## usage
 
-```
+```shell
 ❯ git clone https://github.com/minho42/curl-with-redis-cache.git
 ❯ cd curl-with-redis-cache
 ❯ npm i
@@ -40,7 +40,7 @@ alias curl0="node /Users/.../curl-with-redis-cache/index.js"
 ```
 
 ```json
-// package.json
+// edit package.json to use esm
 {
   ...
   "type": "module",
