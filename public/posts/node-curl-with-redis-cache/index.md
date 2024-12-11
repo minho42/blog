@@ -5,7 +5,7 @@ date: "2024-12-11"
 
 just wanted to use redis locally and came up with this simple idea
 
-provided node.js and redis are installed on your macos
+assumes node.js and redis are installed on your macos
 
 [github repo](https://github.com/minho42/curl-with-redis-cache)
 
