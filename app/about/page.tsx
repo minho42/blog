@@ -24,6 +24,12 @@ export default function Page() {
                 Bluesky
               </a>
             </li>
+            ·
+            <li className="underline">
+              <a href="https://www.linkedin.com/in/minho42" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </ul>
       </article>
