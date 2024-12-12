@@ -47,6 +47,8 @@ export default async function PostPage({ params }) {
                     {
                       // https://shiki.style/themes#themes
                       theme: "github-light",
+                      // https://rehype-pretty.pages.dev/#defaultlang
+                      defaultLang: "shell",
                     },
                   ],
                 ],
