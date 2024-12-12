@@ -20,15 +20,20 @@ assumes node.js and redis are installed on your macos
 
 ## alias
 
-````shell
+```shell
 # ~/.zshrc
 # curl0: run curl with local redis cache
 alias curl0="node /Users/.../curl-with-redis-cache/index.js"
+```
+
+```shell
+❯ chmod +x index.js
+```
 
 ```shell
 # use alias
 ❯ curl0 https://jsonplaceholder.typicode.com/posts/1
-````
+```
 
 ## make it from scratch
 
