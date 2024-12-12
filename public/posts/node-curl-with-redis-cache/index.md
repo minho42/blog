@@ -55,13 +55,15 @@ alias curl0="node /Users/.../curl-with-redis-cache/index.js"
 
 ```js
 // index.js
-import redis from "redis"
+import { createClient } from "redis"
 import fetch from "node-fetch"
 import { argv } from "process"
 
 const CACHE_TIME = 60 * 60 * 1
-const client = redis.createClient()
-client.on("error", (error) => console.log("redis error: ", error))
+const redisUrl = "redis://127.0.0.1:6379"
+const client = createClient({ url: redisUrl })
+client.on("error", (error) => console.log("redis client error: ", error))
+
 await client.connect()
 
 const args = argv.slice(2)
@@ -100,7 +102,9 @@ async function fetchWithRedisCache(url) {
     }
 
     const data = await response.text()
-    client.setEx(url.trim(), CACHE_TIME, data)
+    client.set(url.trim(), data, {
+      EX: CACHE_TIME,
+    })
     console.log(data)
   } catch (error) {
     console.log("error fetching the url: ", error.message)
