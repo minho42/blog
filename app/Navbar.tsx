@@ -18,13 +18,6 @@ export default function Navbar() {
       </Link>
       |
       <Link
-        href="/books"
-        className={`${pathname.includes("/books") ? "text-black font-semibold underline" : ""}`}
-      >
-        Books
-      </Link>
-      |
-      <Link
         href="/projects"
         className={`${pathname.includes("/projects") ? "text-black font-semibold underline" : ""}`}
       >
